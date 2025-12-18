@@ -377,6 +377,19 @@
                 animation: none
             }
         }
+        /* ===== FINAL STABILITY PATCH (GITHUB PAGES SAFE) ===== */
+html {
+  scroll-padding-top: 100px; /* anchor scroll fix */
+}
+
+nav.navbar {
+  box-sizing: border-box;
+}
+
+.hero {
+  min-height: calc(100vh - 84px);
+}
+
     </style>
 
 </head>
