@@ -1,0 +1,64 @@
+/* =========================================
+   InternSpark – Bootstrap 5 Overrides
+   ========================================= */
+
+:root {
+  --bs-primary: #FFC107;
+  --bs-primary-rgb: 255, 193, 7;
+  --bs-dark: #111111;
+  --bs-body-color: #444444;
+  --bs-body-bg: #FFFFFF;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #FFC107;
+  border-color: #FFC107;
+  color: #000;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background-color: #E0A800;
+  border-color: #E0A800;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #111111;
+}
+
+.navbar-brand span {
+  color: #FFC107;
+}
+
+/* Sections */
+.section-light {
+  background-color: #F8F9FA;
+  padding: 80px 0;
+}
+
+.section-white {
+  background-color: #FFFFFF;
+  padding: 80px 0;
+}
+
+/* Cards */
+.card {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* Footer */
+footer {
+  background: #111111;
+  color: #fff;
+  padding: 40px 0;
+}
