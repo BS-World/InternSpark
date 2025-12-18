@@ -376,6 +376,24 @@
                 animation: none
             }
         }
+        /* ================= NAVBAR + HERO SPACING FIX ================= */
+
+nav.navbar {
+  height: 80px;
+  z-index: 1050;
+  background: rgba(0, 0, 0, 0.75); /* optional for stronger visibility */
+}
+
+.hero {
+  padding-top: 140px !important; /* pushes content below navbar */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 160px !important;
+  }
+}
+
     </style>
 
 </head>
