@@ -1,0 +1,916 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Intern Profile | InternSpark Internship Dashboard</title>
+
+    <!-- SEO Meta -->
+    <meta name="description"
+        content="Access your InternSpark intern profile to view internship details, assigned tasks, submission links, and progress status securely.">
+
+    <meta name="keywords"
+        content="InternSpark Intern Profile, Internship Dashboard, Intern Profile Page, Internship Progress Tracker, InternSpark Student Portal">
+
+    <meta name="author" content="InternSpark">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Intern Profile | InternSpark Internship Dashboard">
+    <meta property="og:description"
+        content="View and manage your InternSpark internship profile, tasks, submissions, and progress in one place.">
+    <meta property="og:url" content="https://www.internspark.in/internProfile.html">
+    <meta property="og:image" content="https://www.internspark.in/img/og-internprofile.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Intern Profile | InternSpark">
+    <meta name="twitter:description"
+        content="Securely access your InternSpark internship profile, tasks, and internship progress.">
+    <meta name="twitter:image" content="https://www.internspark.in/img/og-internprofile.png">
+
+    <!-- ================= FAVICONS & APP ICONS ================= -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="icon" href="img/favicon/favicon.ico">
+
+    <link rel="manifest" href="img/favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#0f0f23">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0f0f23">
+
+
+    <!-- ================= SEO & UI ================= -->
+    <meta name="google" content="notranslate">
+    <meta name="theme-color" content="#0f0f23">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <style>
+        /* Overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            /* fade effect */
+        }
+
+        .popup-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .popup-overlay.hide {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Popup Box */
+        .popup-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.4s ease;
+        }
+
+        /* Success Tick */
+        .tick {
+            font-size: 60px;
+            color: green;
+            animation: pop 0.4s ease;
+        }
+
+        /* Tick Pop Animation */
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Box Fade-in */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Heebo', sans-serif;
+        }
+
+        .hero-header {
+            background: url('img/banar1.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        #whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        #whatsapp-btn img {
+            width: 65px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-header {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+    <style>
+        .social-widget {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        .social-widget a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .facebook {
+            background: #3b5998;
+        }
+
+        .instagram {
+            background: #E1306C;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .social-widget a:hover {
+            transform: scale(1.2);
+            opacity: 0.9;
+        }
+    </style>
+    <style>
+        body {
+            padding-top: 80px;
+            /* navbar height ke hisaab se adjust kar sakte ho */
+        }
+
+        /* ================= INTERN PROFILE HERO ================= */
+        .hero-profile {
+            min-height: 55vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0f0f23, #1b1f3b);
+            color: #fff;
+            padding-top: 120px;
+            /* navbar safe */
+            padding-bottom: 60px;
+        }
+
+        .hero-profile h1 {
+            font-size: 3rem;
+        }
+
+        .hero-profile p {
+            opacity: 0.9;
+        }
+
+        /* ================= SEARCH BOX ================= */
+        .profile-search {
+            max-width: 720px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .profile-search input {
+            background: transparent;
+            border: none;
+            color: #fff;
+        }
+
+        .profile-search input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .profile-search input:focus {
+            box-shadow: none;
+            background: transparent;
+            color: #fff;
+        }
+
+        /* ================= PROFILE SECTION ================= */
+        #profileSection {
+            margin-top: -40px;
+        }
+
+        /* ================= MOBILE ================= */
+        @media (max-width: 768px) {
+            .hero-profile h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        /* ================= PROFILE CARD ================= */
+        .card-custom {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+        }
+
+        /* Headings inside card */
+        .card-custom h4,
+        .card-custom h5 {
+            color: #FFC107 !important;
+        }
+
+        /* Text labels */
+        .card-custom p strong {
+            color: #FFC107;
+        }
+
+        /* ================= PROFILE IMAGE ================= */
+        .profile-photo {
+            width: 100%;
+            max-width: 280px;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid rgba(255, 193, 7, 0.6);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        /* ================= BADGE ================= */
+        #remark {
+            font-size: 0.85rem;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        /* ================= FILE INPUT ================= */
+        input[type="file"] {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+
+        /* ================= PROFILE CONTAINER ================= */
+        #profileSection {
+            animation: fadeUp 0.6s ease;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ================= MODAL FIX (InternSpark Theme) ================= */
+
+        /* Dark overlay */
+        .modal-backdrop.show {
+            opacity: 0.75;
+            backdrop-filter: blur(4px);
+        }
+
+        /* Modal container */
+        .modal-content {
+            background: linear-gradient(135deg, #1b1f3b, #0f0f23);
+            color: #fff;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 193, 7, 0.35);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Header */
+        .modal-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .modal-header h5 {
+            font-weight: 700;
+            color: #111;
+        }
+
+        /* Body */
+        .modal-body label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #FFC107;
+            margin-top: 8px;
+        }
+
+        /* Inputs */
+        .modal-body input {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+
+        .modal-body input:focus {
+            background: rgba(255, 255, 255, 0.12);
+            color: #fff;
+            border-color: #FFC107;
+            box-shadow: none;
+        }
+
+        /* Footer */
+        .modal-footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Buttons */
+        .modal-footer .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: #fff;
+        }
+
+        .modal-footer .btn-success {
+            background: #FFC107;
+            border: none;
+            color: #111;
+            font-weight: 600;
+        }
+
+        .modal-footer .btn-success:hover {
+            background: #e0a800;
+        }
+
+        /* Modal size fix */
+        .modal-dialog {
+            max-width: 520px;
+        }
+
+        /* Animation */
+        .modal.fade .modal-dialog {
+            transform: translateY(-30px);
+            transition: transform 0.35s ease-out;
+        }
+
+        .modal.show .modal-dialog {
+            transform: translateY(0);
+        }
+
+        /* ================= LOADING UI ================= */
+
+        .loading-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            margin: 20px auto;
+            width: fit-content;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border-radius: 12px;
+            color: #FFC107;
+            font-weight: 600;
+            animation: fadeIn 0.3s ease;
+        }
+
+        /* Spinner */
+        .spinner {
+            width: 22px;
+            height: 22px;
+            border: 3px solid rgba(255, 193, 7, 0.25);
+            border-top-color: #FFC107;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+</head>
+
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html">
+                <img src="img/navbar-logo.png" alt="InternSpark Logo" height="70" class="me-2">
+                <!-- <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span> -->
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-dark fs-5"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Internship
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
+
+                            <li><a class="dropdown-item" href="internProfile.html">
+                                    Intern Profile
+                                </a></li>
+                            <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+
+                            <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
+                            <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="assessment.html">Assessment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
+                            <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
+                            <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
+                            Apply Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-profile">
+        <div class="container text-center">
+            <h1 class="fw-bold">Intern Profile</h1>
+            <p class="lead mb-4">
+                Access, manage, and track your internship details
+            </p>
+
+            <!-- Search Box -->
+            <div class="profile-search mx-auto">
+                <div class="input-group input-group-lg">
+                    <input type="text" id="candidateId" class="form-control"
+                        placeholder="Enter Candidate ID (e.g. BS/REG/115060)">
+                    <button class="btn btn-warning fw-bold px-4" onclick="fetchProfile()">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+    <!-- ================= Profile Section ================= -->
+     
+    <div class="container py-4">
+
+        <div id="message" class="loading-box d-none">
+            <div class="spinner"></div>
+            <span>Fetching intern profile…</span>
+        </div>
+
+
+        <div id="profileSection" style="display:none;">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <img id="profilePhoto" src="https://via.placeholder.com/300" class="profile-photo mb-2">
+
+                    <input type="file" id="photoUpload" class="form-control">
+                    <button class="btn btn-primary btn-sm mt-2" onclick="uploadImage()">Upload Photo</button>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card card-custom p-4">
+                        <h4 class="fw-bold text-primary">Profile Information</h4>
+
+                        <p><strong>Name:</strong> <span id="candidateName">N/A</span></p>
+                        <p><strong>College:</strong> <span id="collegeName">N/A</span></p>
+                        <p><strong>Subject:</strong> <span id="subject">N/A</span></p>
+                        <p><strong>Email:</strong> <span id="email">N/A</span></p>
+                        <p><strong>Status:</strong> <span id="grade">N/A</span></p>
+                        <p><strong>Domain:</strong> <span id="domain">N/A</span></p>
+                        <p><strong>Skills:</strong> <span id="skills">N/A</span></p>
+
+                        <h5 class="fw-bold mt-3">Assigned Tasks</h5> <a id="task" href="#" target="_blank"
+                            class="btn btn-outline-primary btn-sm">View Task</a>
+                        <h5 class="fw-bold mt-3">Task Submission</h5>
+                        <a href="https://www.alfidotech.com/submission.html" target="_blank"
+                            class="btn btn-primary btn-sm">Submit Here</a>
+                        <p><strong>Remark:</strong> <span id="remark" class="badge bg-warning text-dark">N/A</span></p>
+
+                        <button class="btn btn-warning mt-2" onclick="openEditModal()"><i class="fa fa-edit"></i> Edit
+                            Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Edit Profile Modal -->
+    <div class="modal fade" id="editProfileModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5>Edit Profile</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <input type="hidden" id="editCandidateID">
+                    <label>Name</label><input class="form-control mb-2" id="editName">
+                    <label>College</label><input class="form-control mb-2" id="editCollege">
+                    <label>Subject</label><input class="form-control mb-2" id="editSubject">
+                    <label>Email</label><input class="form-control mb-2" id="editEmail">
+                    <label>Status</label><input class="form-control mb-2" id="editStatus">
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button class="btn btn-success" id="updateBtn" onclick="updateProfile()">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="pt-5 pb-4 mt-5 position-relative">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/navbar-logo.png" alt="InternSpark Logo" class="footer-logo">
+
+                    <p class="text-secondary mt-3">
+                        InternSpark is an online internship & skill development platform
+                        powered by Alfido Tech.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.linkedin.com/company/internspark" target="_blank" class="footer-social"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/internspark" target="_blank" class="footer-social"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/internspark" target="_blank" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@internspark" target="_blank" class="footer-social"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="domains.html" class="footer-link">Domains</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/accessibility.html" class="footer-link">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Address -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact & Address</h6>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-warning"></i>
+                        Bengaluru, Karnataka – 560095, India
+                    </p>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-envelope me-2 text-warning"></i>
+                        <a href="mailto:info@internspark.in" class="footer-link">
+                            info@internspark.in
+                        </a>
+                    </p>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-phone me-2 text-warning"></i>
+                        <a href="tel:+919977465250" class="footer-link">
+                            +91 99774 65250
+                        </a>
+                    </p>
+
+                    <p class="text-secondary small mb-0">
+                        <i class="fas fa-headset me-2 text-warning"></i>
+                        <a href="mailto:support@internspark.in" class="footer-link">
+                            support@internspark.in
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+                <p class="mb-2 mb-md-0 text-secondary small">
+                    © 2025 InternSpark | Powered by
+                    <a href="https://alfidotech.com" target="_blank">Alfido Tech</a>
+                </p>
+                <p class="text-secondary small mb-0">
+                    Made with ❤️ for learners
+                </p>
+            </div>
+
+            <!-- Legal Safe Disclaimer -->
+            <p class="text-secondary small text-center mt-3">
+                InternSpark is a private skill-development initiative and is not affiliated
+                with AICTE or any government organization.
+            </p>
+        </div>
+    </footer>
+    <!-- ================= Footer End ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-btn">
+        <a href="https://api.whatsapp.com/send?phone=919977465250" target="_blank">
+            <img src="https://www.pngall.com/wp-content/uploads/2016/04/WhatsApp-PNG-Picture.png"
+                alt="WhatsApp Contact">
+        </a>
+    </div>
+    <script>
+        // ✅ YOUR GOOGLE SCRIPT URL HERE
+        const apiUrl = "https://script.google.com/macros/s/AKfycbz4yQO0iunOA-eTw98ccupsjBK62uvOuPvNfeU1xvjKr7vhmG4lPncaYwNlQlZXXG4J/exec";
+
+        // ✅ Fetch Profile
+        async function fetchProfile() {
+            const id = candidateId.value.trim();
+            if (!id) return alert("Enter Candidate ID");
+
+            message.classList.remove("d-none");
+            profileSection.style.display = "none";
+
+            const res = await fetch(`${apiUrl}?action=getProfile&candidateID=${id}`);
+            const data = await res.json();
+
+            message.classList.add("d-none");
+
+            if (!data.candidateName) {
+                alert("Candidate Not Found!");
+                return;
+            }
+
+            profileSection.style.display = "block";
+
+
+            candidateName.textContent = data.candidateName;
+            collegeName.textContent = data.collegeName;
+            subject.textContent = data.subject;
+            email.textContent = data.email;
+            grade.textContent = data.grade;
+            domain.textContent = data.domain;
+            skills.textContent = data.skills;
+            remark.textContent = data.remark;
+            task.href = data.task;
+
+            profilePhoto.src = data.profilePhoto || "https://via.placeholder.com/300";
+        }
+
+        // ✅ Open Edit Modal
+        function openEditModal() {
+            editCandidateID.value = candidateId.value;
+            editName.value = candidateName.textContent;
+            editCollege.value = collegeName.textContent;
+            editSubject.value = subject.textContent;
+            editEmail.value = email.textContent;
+            editStatus.value = grade.textContent;
+
+            new bootstrap.Modal(document.getElementById('editProfileModal')).show();
+        }
+
+        // ✅ Update Profile
+        async function updateProfile() {
+            const data = {
+                action: "updateProfile",
+                candidateID: editCandidateID.value,
+                name: editName.value,
+                college: editCollege.value,
+                subject: editSubject.value,
+                email: editEmail.value,
+                status: editStatus.value
+            };
+
+            await fetch(apiUrl, { method: "POST", body: JSON.stringify(data) });
+            alert("Profile Updated!");
+            location.reload();
+        }
+
+        // ✅ Convert to Base64
+        function toBase64(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve(reader.result);
+                reader.onerror = e => reject(e);
+            });
+        }
+
+        // ✅ Upload Image
+        async function uploadImage() {
+            const file = photoUpload.files[0];
+            if (!file) return alert("Select Image");
+
+            const base64 = await toBase64(file);
+
+            const data = {
+                action: "uploadPhoto",
+                candidateID: candidateId.value,
+                fileName: file.name,
+                fileType: file.type,
+                fileData: base64.split(",")[1]
+            };
+
+            await fetch(apiUrl, { method: "POST", body: JSON.stringify(data) });
+            alert("Photo Uploaded!");
+            location.reload();
+        }
+    </script>
+
+
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+</body>
+
+</html>
