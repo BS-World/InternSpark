@@ -8,86 +8,116 @@
 <link rel="stylesheet" href="css/style.css">
 
 
-
-<!-- ================= NAVBAR ================= -->
-<nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
+<footer class="pt-5 pb-4 mt-5 position-relative">
     <div class="container">
+        <div class="row gy-4">
 
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html">
-            <img src="img/navbar-logo.png" alt="InternSpark Logo" height="70" class="me-2">
-            <!-- <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span> -->
-        </a>
+            <!-- Brand -->
+            <div class="col-lg-4 col-md-6">
+                <img src="img/navbar-logo.png" alt="InternSpark Logo" class="footer-logo">
 
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
-            <i class="fas fa-bars text-dark fs-5"></i>
-        </button>
+                <p class="text-secondary mt-3">
+                    InternSpark is an online internship & skill development platform
+                    powered by Alfido Tech.
+                </p>
 
-        <!-- Menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-
-                <li class="nav-item">
-                    <a class="nav-link text-white active" href="index.html">Home</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
-                        Internship
+                <!-- Social Media -->
+                <div class="d-flex gap-3 mt-3">
+                    <a href="https://www.linkedin.com/company/internspark" target="_blank" class="footer-social"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark rounded-4">
-                        <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
-
-                        <li><a class="dropdown-item" href="internProfile.html">
-                                Intern Profile
-                            </a></li>
-                        <li><a class="dropdown-item" href="task.html">Tasks</a></li>
-
-                        <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
-                        <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
-
-
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="assessment.html">Assessment</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="Contact.html">Contact Us</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="about.html">About</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
-                        Resources
+                    <a href="https://www.instagram.com/internspark" target="_blank" class="footer-social"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-dark rounded-4">
-                        <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
-                        <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
-                        <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
-                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                        <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
-                    </ul>
-                </li>
-
-                <li class="nav-item ms-lg-2">
-                    <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
-                        Apply Now
+                    <a href="https://x.com/internspark" target="_blank" class="footer-social" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
                     </a>
-                </li>
+                    <a href="https://www.youtube.com/@internspark" target="_blank" class="footer-social"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
 
-            </ul>
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="domains.html" class="footer-link">Domains</a></li>
+                    <li><a href="about.html" class="footer-link">About</a></li>
+                    <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
+                    <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    <li><a href="/accessibility.html" class="footer-link">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Address -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Contact & Address</h6>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-map-marker-alt me-2 text-warning"></i>
+                    Bengaluru, Karnataka – 560095, India
+                </p>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-envelope me-2 text-warning"></i>
+                    <a href="mailto:info@internspark.in" class="footer-link">
+                        info@internspark.in
+                    </a>
+                </p>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-phone me-2 text-warning"></i>
+                    <a href="tel:+919977465250" class="footer-link">
+                        +91 99774 65250
+                    </a>
+                </p>
+
+                <p class="text-secondary small mb-0">
+                    <i class="fas fa-headset me-2 text-warning"></i>
+                    <a href="mailto:support@internspark.in" class="footer-link">
+                        support@internspark.in
+                    </a>
+                </p>
+            </div>
 
         </div>
-    </div>
-</nav>
 
-<!-- ================= NAVBAR END ================= -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+        <hr class="my-4 border-secondary">
+
+        <!-- Bottom Bar -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+            <p class="mb-2 mb-md-0 text-secondary small">
+                © 2025 InternSpark | Powered by
+                <a href="https://alfidotech.com" target="_blank">Alfido Tech</a>
+            </p>
+            <p class="text-secondary small mb-0">
+                Made with ❤️ for learners
+            </p>
+        </div>
+
+        <!-- Legal Safe Disclaimer -->
+        <p class="text-secondary small text-center mt-3">
+            InternSpark is a private skill-development initiative and is not affiliated
+            with AICTE or any government organization.
+        </p>
+    </div>
+</footer>
+<!-- ================= Footer End ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
