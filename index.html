@@ -2,1466 +2,1530 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>InternSpark – Internship Program</title>
+    <!-- ================= BASIC META ================= -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <title>InternSpark – Internship & Skill Development Program</title>
 
-  <style>
-    /* ================= ROOT ================= */
-    :root {
-      --yellow: #FFC107;
-      --dark: #0f0f23;
-    }
+    <meta name="description"
+        content="InternSpark is an online internship and skill development platform powered by Alfido Tech. Gain real-world experience through project-based internships and earn verified certificates.">
 
-    /* ================= BASE ================= */
-    * {
-      box-sizing: border-box
-    }
+    <meta name="keywords"
+        content="InternSpark, internspark.in, online internship, internship for students, skill development internship, project based internship, internship certificate, Alfido Tech internship">
 
-    html {
-      scroll-padding-top: 100px
-    }
+    <meta name="author" content="InternSpark | Alfido Tech">
+    <meta name="robots" content="index, follow">
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: var(--dark);
-      color: #fff;
-      overflow-x: hidden;
-      padding-top: 84px;
-      /* FIXED NAVBAR SPACE */
-    }
+    <!-- ================= BRANDING ================= -->
+    <!-- ================= FAVICONS & APP ICONS ================= -->
 
-    a {
-      text-decoration: none
-    }
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
 
-    /* ================= NAVBAR ================= */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      min-height: 84px;
-      background: rgba(15, 15, 35, .95);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(255, 255, 255, .1);
-      z-index: 1100;
-      padding: .75rem 0;
-    }
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
 
-    .navbar-brand {
-      display: flex;
-      align-items: center;
-      gap: 10px
-    }
+    <link rel="manifest" href="/img/favicon/manifest.json">
 
-    /* ================= HERO ================= */
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-      position: relative;
-    }
+    <meta name="msapplication-TileColor" content="#0f0f23">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0f0f23">
 
-    .hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 80%, rgba(255, 193, 7, .1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, .05) 0%, transparent 50%);
-      pointer-events: none;
-    }
 
-    .hero .container {
-      position: relative;
-      z-index: 2
-    }
+    <!-- ================= CANONICAL ================= -->
+    <link rel="canonical" href="https://internspark.in/">
 
-    .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4.5rem);
-      font-weight: 800;
-      line-height: 1.1;
-    }
+    <!-- ================= OPEN GRAPH (FACEBOOK / LINKEDIN) ================= -->
+    <meta property="og:title" content="InternSpark – Internship & Skill Development Program">
+    <meta property="og:description"
+        content="Join InternSpark to gain hands-on experience through real-world internship projects and earn verified certificates. Powered by Alfido Tech.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://internspark.in/">
+    <meta property="og:image" content="https://internspark.in/img/og-image.jpg">
 
-    .hero .lead {
-      font-size: 1.4rem;
-      opacity: .95
-    }
+    <!-- ================= TWITTER CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="InternSpark – Internship Program">
+    <meta name="twitter:description"
+        content="Project-based online internships with verified certificates. Learn industry-relevant skills with InternSpark.">
+    <meta name="twitter:image" content="https://internspark.in/img/og-image.jpg">
 
-    /* ================= HERO BADGES ================= */
-    .hero-badge {
-      background: rgba(255, 193, 7, .15);
-      color: #FFC107;
-      border: 1px solid rgba(255, 193, 7, .45);
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 14px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      backdrop-filter: blur(6px);
-    }
+    <!-- ================= SEO & UI ================= -->
+    <meta name="google" content="notranslate">
+    <meta name="theme-color" content="#0f0f23">
 
-    /* ================= ANIMATIONS ================= */
-    .reveal {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: .8s cubic-bezier(.25, .46, .45, .94);
-    }
 
-    .reveal.active {
-      opacity: 1;
-      transform: none;
-    }
 
-    .float {
-      animation: float 4s ease-in-out infinite
-    }
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
 
-    @keyframes float {
+    <style>
+        /* ================= ROOT ================= */
+        :root {
+            --yellow: #FFC107;
+            --dark: #0f0f23;
+        }
 
-      0%,
-      100% {
-        transform: translateY(0)
-      }
+        /* ================= BASE ================= */
+        * {
+            box-sizing: border-box
+        }
 
-      50% {
-        transform: translateY(-12px)
-      }
-    }
+        html {
+            scroll-padding-top: 100px
+        }
 
-    /* ================= BUTTONS ================= */
-    .btn-yellow {
-      background: linear-gradient(45deg, #FFC107, #FFD54F);
-      color: #000;
-      font-weight: 700;
-      border: none;
-      padding: 14px 34px;
-      border-radius: 50px;
-      box-shadow: 0 15px 35px rgba(255, 193, 7, .45);
-      transition: .3s;
-    }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark);
+            color: #fff;
+            overflow-x: hidden;
+            padding-top: 84px;
+            /* FIXED NAVBAR SPACE */
+        }
 
-    .btn-yellow:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 25px 50px rgba(255, 193, 7, .6);
-    }
+        a {
+            text-decoration: none
+        }
 
-    /* ================= GLASS ================= */
-    .glass-primary {
-      background: rgba(255, 193, 7, .15);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(255, 193, 7, .35);
-      border-radius: 22px;
-      box-shadow: 0 25px 60px rgba(0, 0, 0, .4);
-    }
+        /* ================= NAVBAR ================= */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            min-height: 84px;
+            background: rgba(15, 15, 35, .95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            z-index: 1100;
+            padding: .75rem 0;
+        }
 
-    /* ================= SECTIONS ================= */
-    .py-5 {
-      padding: 5rem 0 !important
-    }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
 
-    .bg-light {
-      background: rgba(255, 255, 255, .03) !important
-    }
+        /* ================= HERO ================= */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+            position: relative;
+        }
 
-    /* ================= DOMAIN CARDS ================= */
-    .domain-card {
-      background: rgba(255, 255, 255, .08);
-      border: 1px solid rgba(255, 255, 255, .15);
-      backdrop-filter: blur(16px);
-      border-radius: 20px;
-      padding: 2.5rem 2rem;
-      transition: .4s;
-      height: 100%;
-    }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(255, 193, 7, .1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, .05) 0%, transparent 50%);
+            pointer-events: none;
+        }
 
-    .domain-card:hover {
-      transform: translateY(-15px);
-      border-color: var(--yellow);
-      box-shadow: 0 30px 60px rgba(255, 193, 7, .2);
-    }
+        .hero .container {
+            position: relative;
+            z-index: 2
+        }
 
-    .domain-icon {
-      width: 60px;
-      height: 60px;
-      background: rgba(255, 193, 7, .25);
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--yellow);
-      font-size: 1.4rem;
-      margin: 0 auto 20px;
-    }
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+        }
 
-    /* ================= APPLY BUTTON ================= */
-    .btn-apply {
-      background: linear-gradient(45deg, var(--yellow), #FFD54F);
-      color: #000;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 50px;
-      font-weight: 700;
-      width: 100%;
-    }
+        .hero .lead {
+            font-size: 1.4rem;
+            opacity: .95
+        }
 
-    /* ================= SERVICES ================= */
-    .service-card {
-      border: 1px solid rgba(255, 255, 255, .1);
-      border-radius: 25px;
-      padding: 3rem 2rem;
-      text-align: center;
-      backdrop-filter: blur(10px);
-      transition: .3s;
-    }
+        /* ================= HERO BADGES ================= */
+        .hero-badge {
+            background: rgba(255, 193, 7, .15);
+            color: #FFC107;
+            border: 1px solid rgba(255, 193, 7, .45);
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            backdrop-filter: blur(6px);
+        }
 
-    .service-card:hover {
-      border-color: var(--yellow);
-      transform: translateY(-10px);
-      box-shadow: 0 25px 50px rgba(255, 193, 7, .2);
-    }
+        /* ================= ANIMATIONS ================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: .8s cubic-bezier(.25, .46, .45, .94);
+        }
 
-    .service-icon {
-      transition: .35s
-    }
+        .reveal.active {
+            opacity: 1;
+            transform: none;
+        }
 
-    .service-card:hover .service-icon {
-      transform: scale(1.15) rotate(5deg);
-    }
+        .float {
+            animation: float 4s ease-in-out infinite
+        }
 
-    /* ================= FORMS ================= */
-    .form-control,
-    .form-select {
-      background: rgba(255, 255, 255, .08) !important;
-      border: 1px solid rgba(255, 255, 255, .2) !important;
-      color: #fff !important;
-      border-radius: 15px;
-    }
+        @keyframes float {
 
-    .form-control::placeholder {
-      color: #ccc !important
-    }
+            0%,
+            100% {
+                transform: translateY(0)
+            }
 
-    .form-control:focus,
-    .form-select:focus {
-      background: rgba(255, 255, 255, .12) !important;
-      border-color: var(--yellow) !important;
-      box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .25) !important;
-    }
+            50% {
+                transform: translateY(-12px)
+            }
+        }
 
-    /* ================= CHATBOT ================= */
-    .chatbot-toggle {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 70px;
-      height: 70px;
-      background: linear-gradient(45deg, var(--yellow), #FFD54F);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 15px 40px rgba(255, 193, 7, .5);
-      z-index: 1050;
-      color: #000;
-      font-size: 1.5rem;
-    }
+        /* ================= BUTTONS ================= */
+        .btn-yellow {
+            background: linear-gradient(45deg, #FFC107, #FFD54F);
+            color: #000;
+            font-weight: 700;
+            border: none;
+            padding: 14px 34px;
+            border-radius: 50px;
+            box-shadow: 0 15px 35px rgba(255, 193, 7, .45);
+            transition: .3s;
+        }
 
-    .chatbot-panel {
-      position: fixed;
-      bottom: 110px;
-      right: 30px;
-      width: 380px;
-      height: 500px;
-      background: rgba(255, 255, 255, .95);
-      border-radius: 25px;
-      box-shadow: 0 25px 70px rgba(0, 0, 0, .3);
-      display: none;
-      flex-direction: column;
-      z-index: 1051;
-    }
+        .btn-yellow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 50px rgba(255, 193, 7, .6);
+        }
 
-    /* ================= FOOTER ================= */
-    footer {
-      background: linear-gradient(180deg, #0b0b1c 0%, #0f0f23 100%);
-      border-top: 1px solid rgba(255, 255, 255, .05);
-    }
+        /* ================= GLASS ================= */
+        .glass-primary {
+            background: rgba(255, 193, 7, .15);
+            backdrop-filter: blur(18px);
+            border: 1px solid rgba(255, 193, 7, .35);
+            border-radius: 22px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, .4);
+        }
 
-    .footer-link {
-      color: #ccc
-    }
+        /* ================= SECTIONS ================= */
+        .py-5 {
+            padding: 5rem 0 !important
+        }
 
-    .footer-link:hover {
-      color: var(--yellow)
-    }
+        .bg-light {
+            background: rgba(255, 255, 255, .03) !important
+        }
 
-    /* ================= DROPDOWN ================= */
-    .dropdown-menu {
-      background: rgba(15, 15, 35, .98);
-      backdrop-filter: blur(20px);
-    }
+        /* ================= DOMAIN CARDS ================= */
+        .domain-card {
+            background: rgba(255, 255, 255, .08);
+            border: 1px solid rgba(255, 255, 255, .15);
+            backdrop-filter: blur(16px);
+            border-radius: 20px;
+            padding: 2.5rem 2rem;
+            transition: .4s;
+            height: 100%;
+        }
 
-    .dropdown-item {
-      color: #eee;
-      font-weight: 500;
-    }
+        .domain-card:hover {
+            transform: translateY(-15px);
+            border-color: var(--yellow);
+            box-shadow: 0 30px 60px rgba(255, 193, 7, .2);
+        }
 
-    .dropdown-item:hover,
-    .dropdown-item.active {
-      background: rgba(255, 193, 7, .2);
-      color: #FFC107;
-    }
+        .domain-icon {
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 193, 7, .25);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--yellow);
+            font-size: 1.4rem;
+            margin: 0 auto 20px;
+        }
 
-    /* ================= MOBILE ================= */
-    @media(max-width:768px) {
-      body {
-        padding-top: 96px
-      }
+        /* ================= APPLY BUTTON ================= */
+        .btn-apply {
+            background: linear-gradient(45deg, var(--yellow), #FFD54F);
+            color: #000;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 700;
+            width: 100%;
+        }
 
-      .hero {
-        text-align: center
-      }
+        /* ================= SERVICES ================= */
+        .service-card {
+            border: 1px solid rgba(255, 255, 255, .1);
+            border-radius: 25px;
+            padding: 3rem 2rem;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            transition: .3s;
+        }
 
-      .domain-card {
-        padding: 2rem 1.5rem
-      }
+        .service-card:hover {
+            border-color: var(--yellow);
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(255, 193, 7, .2);
+        }
 
-      .chatbot-panel {
-        right: 20px;
-        width: calc(100vw - 40px)
-      }
+        .service-icon {
+            transition: .35s
+        }
 
-      .float {
-        animation: none
-      }
-    }
+        .service-card:hover .service-icon {
+            transform: scale(1.15) rotate(5deg);
+        }
 
-    /* ================= CHATBOT FIX ================= */
-    .chatbot-messages {
-      flex: 1;
-      padding: 15px;
-      overflow-y: auto;
-      background: #f7f7f7;
-    }
+        /* ================= FORMS ================= */
+        .form-control,
+        .form-select {
+            background: rgba(255, 255, 255, .08) !important;
+            border: 1px solid rgba(255, 255, 255, .2) !important;
+            color: #fff !important;
+            border-radius: 15px;
+        }
 
-    .message {
-      max-width: 80%;
-      padding: 10px 14px;
-      margin-bottom: 10px;
-      border-radius: 16px;
-      font-size: 14px;
-      line-height: 1.4;
-      word-wrap: break-word;
-    }
+        .form-control::placeholder {
+            color: #ccc !important
+        }
 
-    .message.user {
-      background: #ffc107;
-      color: #000;
-      margin-left: auto;
-      border-bottom-right-radius: 4px;
-    }
+        .form-control:focus,
+        .form-select:focus {
+            background: rgba(255, 255, 255, .12) !important;
+            border-color: var(--yellow) !important;
+            box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .25) !important;
+        }
 
-    .message.bot {
-      background: #ffffff;
-      color: #000;
-      border: 1px solid #ddd;
-      margin-right: auto;
-      border-bottom-left-radius: 4px;
-    }
+        /* ================= CHATBOT ================= */
+        .chatbot-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(45deg, var(--yellow), #FFD54F);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 40px rgba(255, 193, 7, .5);
+            z-index: 1050;
+            color: #000;
+            font-size: 1.5rem;
+        }
 
-    #chatInput {
-      background: #ffffff !important;
-      color: #000000 !important;
-      border: 2px solid #FFC107;
-    }
+        .chatbot-panel {
+            position: fixed;
+            bottom: 110px;
+            right: 30px;
+            width: 380px;
+            height: 500px;
+            background: rgba(255, 255, 255, .95);
+            border-radius: 25px;
+            box-shadow: 0 25px 70px rgba(0, 0, 0, .3);
+            display: none;
+            flex-direction: column;
+            z-index: 1051;
+        }
 
-    #chatInput::placeholder {
-      color: #555;
-    }
-  </style>
+        /* ================= FOOTER ================= */
+        footer {
+            background: linear-gradient(180deg, #0b0b1c 0%, #0f0f23 100%);
+            border-top: 1px solid rgba(255, 255, 255, .05);
+        }
+
+        .footer-link {
+            color: #ccc
+        }
+
+        .footer-link:hover {
+            color: var(--yellow)
+        }
+
+        /* ================= DROPDOWN ================= */
+        .dropdown-menu {
+            background: rgba(15, 15, 35, .98);
+            backdrop-filter: blur(20px);
+        }
+
+        .dropdown-item {
+            color: #eee;
+            font-weight: 500;
+        }
+
+        .dropdown-item:hover,
+        .dropdown-item.active {
+            background: rgba(255, 193, 7, .2);
+            color: #FFC107;
+        }
+
+        /* ================= MOBILE ================= */
+        @media(max-width:768px) {
+            body {
+                padding-top: 96px
+            }
+
+            .hero {
+                text-align: center
+            }
+
+            .domain-card {
+                padding: 2rem 1.5rem
+            }
+
+            .chatbot-panel {
+                right: 20px;
+                width: calc(100vw - 40px)
+            }
+
+            .float {
+                animation: none
+            }
+        }
+
+        /* ================= CHATBOT FIX ================= */
+        .chatbot-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #f7f7f7;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+            border-radius: 16px;
+            font-size: 14px;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+
+        .message.user {
+            background: #ffc107;
+            color: #000;
+            margin-left: auto;
+            border-bottom-right-radius: 4px;
+        }
+
+        .message.bot {
+            background: #ffffff;
+            color: #000;
+            border: 1px solid #ddd;
+            margin-right: auto;
+            border-bottom-left-radius: 4px;
+        }
+
+        #chatInput {
+            background: #ffffff !important;
+            color: #000000 !important;
+            border: 2px solid #FFC107;
+        }
+
+        #chatInput::placeholder {
+            color: #555;
+        }
+    </style>
 
 </head>
 
 <body>
-  <!-- ================= NAVBAR ================= -->
-  <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
-    <div class="container">
-
-      <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="#">
-        <img src="img/logo.png" alt="InternSpark" height="50" class="me-2">
-        <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span>
-      </a>
-
-      <!-- Mobile Toggle -->
-      <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav">
-        <i class="fas fa-bars text-dark fs-5"></i>
-      </button>
-
-      <!-- Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-
-          <li class="nav-item">
-            <a class="nav-link text-white active" href="index.html">Home</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
-              Internship
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark rounded-4">
-              <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
-
-              <li><a class="dropdown-item" href="internProfile.html">
-                  Intern Profile
-                </a></li>
-              <li><a class="dropdown-item" href="task.html">Tasks</a></li>
-
-              <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
-              <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
-
-              
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white" href="assessment.html">Assessment</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white" href="Contact.html">Contact Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link text-white" href="about.html">About</a>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
-              Resources
-            </a>
-            <ul class="dropdown-menu dropdown-menu-dark rounded-4">
-              <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
-              <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
-              <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
-              <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item ms-lg-2">
-            <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
-              Apply Now
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-  </nav>
-
-
-  <!-- ================= HERO ================= -->
-  <section id="home" class="hero position-relative">
-    <div class="container">
-      <div class="row align-items-center gy-4">
-
-        <!-- LEFT CONTENT -->
-        <div class="col-lg-6">
-          <div class="reveal">
-
-            <!-- Trust Badge -->
-            <span class="badge bg-warning text-dark px-3 py-2 fs-6 mb-3">
-              Powered by <a href="https://alfidotech.com" class="text-dark">Alfido Tech</a>
-            </span>
-
-            <h1 class="mt-3">
-              Launch Your<br>
-              <span style="color:var(--yellow)">Career Spark</span>
-            </h1>
-
-            <p class="lead fs-4 opacity-90 mb-4">
-              Learn by building real-world projects with guided mentorship.<br>
-              Designed for students & fresh professionals.
-            </p>
-
-            <!-- CTA -->
-            <div class="d-flex gap-3 flex-wrap">
-              <a href="#apply" class="btn btn-yellow btn-lg px-5">
-                🚀 Apply Now (60s)
-              </a>
-              <a href="#domains" class="btn btn-outline-light btn-lg px-4">
-                Explore 19 Domains
-              </a>
-            </div>
-
-            <!-- Social Proof -->
-            <div class="mt-4 d-flex flex-wrap gap-3 align-items-center">
-              <span class="hero-badge px-3 py-2">
-                ✔ Verified Certificates
-              </span>
-              <span class="hero-badge px-3 py-2">
-                ✔ Project-Based Learning
-              </span>
-              <span class="hero-badge px-3 py-2">
-                ✔ Career Guidance
-              </span>
-            </div>
-
-
-          </div>
-        </div>
-
-        <!-- RIGHT CARD -->
-        <div class="col-lg-6 text-center">
-          <div class="glass-primary p-5 mx-auto float" style="max-width:340px">
-
-            <!-- Logo Icon -->
-            <!-- <img src="img/logo.png" alt="InternSpark" style="height:60px" class="mb-3"> -->
-
-            <h3 class="fw-bold fs-1 mb-2">4–8 Weeks</h3>
-            <p class="opacity-90 fs-5 mb-3">
-              Structured Internship Program
-            </p>
-
-            <!-- Mini stats -->
-            <div class="d-flex justify-content-center gap-3 mt-3">
-              <div class="text-center">
-                <h5 class="fw-bold mb-0">19+</h5>
-                <small class="opacity-75">Domains</small>
-              </div>
-              <div class="text-center">
-                <h5 class="fw-bold mb-0">10K+</h5>
-                <small class="opacity-75">Learners</small>
-              </div>
-              <div class="text-center">
-                <h5 class="fw-bold mb-0">100%</h5>
-                <small class="opacity-75">Skill-Focused</small>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SERVICES ================= -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title mb-4 reveal">How InternSpark Works</h2>
-        <p class="lead fs-4 opacity-90 reveal">
-          A simple, transparent internship journey designed for real learning
-        </p>
-      </div>
-
-      <div class="row g-4">
-
-        <!-- STEP 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <!-- <span class="step-badge">Step 1</span> -->
-            <i class="fas fa-file-signature fa-4x text-warning mb-4 service-icon"></i>
-            <h3 class="h3 fw-bold mb-3">Apply Online</h3>
-            <p class="opacity-90 fs-5">
-              Select your preferred domain and complete the online application.
-              The process is quick and beginner-friendly.
-            </p>
-            <a href="#apply" class="btn btn-warning fw-bold rounded-pill px-4 mt-3">
-              Apply Now
-            </a>
-          </div>
-        </div>
-
-        <!-- STEP 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <!-- <span class="step-badge">Step 2</span> -->
-            <i class="fas fa-tasks fa-4x text-success mb-4 service-icon"></i>
-            <h3 class="h3 fw-bold mb-3">Offer Letter & Projects</h3>
-            <p class="opacity-90 fs-5">
-              Eligible candidates receive an offer letter and access to structured
-              tasks, assignments, and domain-specific projects.
-            </p>
-          </div>
-        </div>
-
-        <!-- STEP 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <!-- <span class="step-badge">Step 3</span> -->
-            <i class="fas fa-certificate fa-4x text-primary mb-4 service-icon"></i>
-            <h3 class="h3 fw-bold mb-3">Get Certified</h3>
-            <p class="opacity-90 fs-5">
-              After successful completion and evaluation, receive a verified
-              Internship & Experience Certificate from InternSpark.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- ================= DOMAINS ================= -->
-  <section id="domains" class="py-5">
-    <div class="container">
-      <div class="text-center mb-5 pt-5">
-        <h2 class="section-title mb-4 reveal">Choose Your Domain</h2>
-        <p class="lead fs-4 opacity-90 reveal" style="animation-delay:.2s">
-          19 cutting-edge domains with live projects, certification & placement support
-        </p>
-      </div>
-
-      <div class="row g-4">
-
-        <!-- Frontend -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-code"></i></div>
-            <span class="badge bg-warning text-dark mb-3">High Demand</span>
-            <h3 class="h5 fw-bold mb-3">Frontend Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li><i class="fas fa-check text-success me-2"></i>HTML, CSS, JavaScript</li>
-              <li><i class="fas fa-check text-success me-2"></i>Responsive UI & UX</li>
-              <li><i class="fas fa-check text-success me-2"></i>Live Website Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">
-              <i class="fas fa-rocket me-2"></i>Apply Now
-            </a>
-          </div>
-        </div>
-
-        <!-- React -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fab fa-react"></i></div>
-            <span class="badge bg-info mb-3">Popular</span>
-            <h3 class="h5 fw-bold mb-3">React.JS</h3>
-            <ul class="list-unstyled mb-4">
-              <li><i class="fas fa-check text-success me-2"></i>Components & Hooks</li>
-              <li><i class="fas fa-check text-success me-2"></i>API Integration</li>
-              <li><i class="fas fa-check text-success me-2"></i>Real-world Apps</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- MERN -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-server"></i></div>
-            <span class="badge bg-success mb-3">Full Stack</span>
-            <h3 class="h5 fw-bold mb-3">MERN Stack Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li><i class="fas fa-check text-success me-2"></i>MongoDB, Express, React, Node</li>
-              <li><i class="fas fa-check text-success me-2"></i>Authentication & APIs</li>
-              <li><i class="fas fa-check text-success me-2"></i>Industry-level Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Python -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fab fa-python"></i></div>
-            <span class="badge bg-warning mb-3">Core Skill</span>
-            <h3 class="h5 fw-bold mb-3">Python Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Automation & Scripting</li>
-              <li>File handling & APIs</li>
-              <li>Mini + Major Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- C/C++ -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-microchip"></i></div>
-            <span class="badge bg-secondary mb-3">Foundation</span>
-            <h3 class="h5 fw-bold mb-3">C / C++ Programming</h3>
-            <ul class="list-unstyled mb-4">
-              <li>DSA & Logic Building</li>
-              <li>Memory & Pointers</li>
-              <li>Problem Solving</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Java -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fab fa-java"></i></div>
-            <span class="badge bg-danger mb-3">Enterprise</span>
-            <h3 class="h5 fw-bold mb-3">Java Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li>OOPs & Collections</li>
-              <li>JDBC & Spring Basics</li>
-              <li>Backend Applications</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- .NET -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-globe"></i></div>
-            <span class="badge bg-primary mb-3">Corporate</span>
-            <h3 class="h5 fw-bold mb-3">.NET Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li>C# & ASP.NET</li>
-              <li>Web APIs</li>
-              <li>Enterprise Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Data Analytics -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-chart-bar"></i></div>
-            <span class="badge bg-success mb-3">Trending</span>
-            <h3 class="h5 fw-bold mb-3">Data Analytics</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Excel, SQL, Power BI</li>
-              <li>Dashboard Building</li>
-              <li>Business Insights</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Business Analytics -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-chart-pie"></i></div>
-            <span class="badge bg-info mb-3">Strategy</span>
-            <h3 class="h5 fw-bold mb-3">Business Analytics</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Market Analysis</li>
-              <li>Decision Making</li>
-              <li>Case Studies</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Data Science -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-database"></i></div>
-            <span class="badge bg-warning mb-3">Advanced</span>
-            <h3 class="h5 fw-bold mb-3">Data Science</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Python & Statistics</li>
-              <li>Data Modeling</li>
-              <li>Capstone Project</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- AI -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-brain"></i></div>
-            <span class="badge bg-primary mb-3">Future Tech</span>
-            <h3 class="h5 fw-bold mb-3">Artificial Intelligence</h3>
-            <ul class="list-unstyled mb-4">
-              <li>AI Concepts & Tools</li>
-              <li>Real AI Use Cases</li>
-              <li>Automation Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Digital Marketing -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-bullhorn"></i></div>
-            <span class="badge bg-danger mb-3">Creative</span>
-            <h3 class="h5 fw-bold mb-3">Digital Marketing</h3>
-            <ul class="list-unstyled mb-4">
-              <li>SEO, SMO, Ads</li>
-              <li>Content Strategy</li>
-              <li>Live Campaigns</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- ML -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-robot"></i></div>
-            <span class="badge bg-success mb-3">AI Track</span>
-            <h3 class="h5 fw-bold mb-3">Machine Learning</h3>
-            <ul class="list-unstyled mb-4">
-              <li>ML Algorithms</li>
-              <li>Model Training</li>
-              <li>Prediction Systems</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Cybersecurity -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-shield-alt"></i></div>
-            <span class="badge bg-dark mb-3">Security</span>
-            <h3 class="h5 fw-bold mb-3">Cybersecurity</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Ethical Hacking</li>
-              <li>Network Security</li>
-              <li>Security Labs</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- UX/UI -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-paint-brush"></i></div>
-            <span class="badge bg-warning mb-3">Design</span>
-            <h3 class="h5 fw-bold mb-3">UX / UI Design</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Figma & Wireframes</li>
-              <li>User Research</li>
-              <li>Portfolio Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Android -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fab fa-android"></i></div>
-            <span class="badge bg-success mb-3">Mobile</span>
-            <h3 class="h5 fw-bold mb-3">Android Developer</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Kotlin / Java</li>
-              <li>App Development</li>
-              <li>Play Store Ready</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- VLSI -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-microchip"></i></div>
-            <span class="badge bg-secondary mb-3">Core Tech</span>
-            <h3 class="h5 fw-bold mb-3">VLSI</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Chip Design Basics</li>
-              <li>RTL & Verification</li>
-              <li>Industry Exposure</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Embedded -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-cogs"></i></div>
-            <span class="badge bg-info mb-3">Hardware</span>
-            <h3 class="h5 fw-bold mb-3">Embedded Systems</h3>
-            <ul class="list-unstyled mb-4">
-              <li>Microcontrollers</li>
-              <li>IoT Concepts</li>
-              <li>Hardware Projects</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- Cloud -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-cloud"></i></div>
-            <span class="badge bg-primary mb-3">Cloud</span>
-            <h3 class="h5 fw-bold mb-3">Cloud Computing</h3>
-            <ul class="list-unstyled mb-4">
-              <li>AWS / Azure Basics</li>
-              <li>Cloud Deployment</li>
-              <li>Live Hosting</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-        <!-- DevOps -->
-        <div class="col-lg-4 col-md-6">
-          <div class="domain-card reveal">
-            <div class="domain-icon"><i class="fas fa-cubes"></i></div>
-            <span class="badge bg-danger mb-3">Ops</span>
-            <h3 class="h5 fw-bold mb-3">DevOps</h3>
-            <ul class="list-unstyled mb-4">
-              <li>CI/CD Pipelines</li>
-              <li>Docker & Git</li>
-              <li>Automation Tools</li>
-            </ul>
-            <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SERVICES ================= -->
-  <section id="services" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title mb-4 reveal">Our IT Services</h2>
-        <p class="lead fs-4 opacity-90 reveal">Specialized training in cutting-edge technologies</p>
-      </div>
-      <div class="row g-4">
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <i class="fas fa-code fa-4x text-warning mb-4"></i>
-            <h3 class="h3 fw-bold mb-3">Web Development</h3>
-            <p class="opacity-90 fs-5">React, Node.js, Next.js, TypeScript</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <i class="fas fa-database fa-4x text-success mb-4"></i>
-            <h3 class="h3 fw-bold mb-3">Data Analysis</h3>
-            <p class="opacity-90 fs-5">Python, SQL, Power BI, Tableau</p>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="service-card text-center reveal h-100">
-            <i class="fas fa-cogs fa-4x text-primary mb-4"></i>
-            <h3 class="h3 fw-bold mb-3">Automations</h3>
-            <p class="opacity-90 fs-5">AI/ML, RPA, Selenium, Zapier</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="py-5 position-relative">
-    <div class="container">
-      <div class="row align-items-center g-5">
-
-        <!-- TEXT -->
-        <div class="col-lg-6">
-          <div class="reveal">
-
-            <span class="badge bg-warning text-dark fs-6 px-4 py-2 mb-4">
-              Industry-Oriented Internship Program
-            </span>
-
-            <h2 class="display-5 fw-bold mb-4">
-              Learn Skills That Matter in<br>
-              <span style="color:var(--yellow)">Real-World Projects</span>
-            </h2>
-
-            <p class="fs-5 opacity-90 mb-4">
-              InternSpark is a structured online internship platform powered by
-              <strong>Alfido Tech</strong>, designed to help students and freshers
-              gain hands-on experience through guided tasks, live projects, and
-              industry-relevant tools.
-            </p>
-
-            <div class="row g-3 mb-4">
-
-              <div class="col-md-6">
-                <div class="glass-primary p-4 h-100">
-                  <i class="fas fa-project-diagram text-warning me-2"></i>
-                  <strong>Project-Based Learning</strong>
-                  <p class="small opacity-75 mt-2 mb-0">
-                    Work on real-world tasks instead of just theory.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="glass-primary p-4 h-100">
-                  <i class="fas fa-user-graduate text-warning me-2"></i>
-                  <strong>Beginner Friendly</strong>
-                  <p class="small opacity-75 mt-2 mb-0">
-                    No prior experience required. Start from basics.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="glass-primary p-4 h-100">
-                  <i class="fas fa-certificate text-warning me-2"></i>
-                  <strong>Verified Certification</strong>
-                  <p class="small opacity-75 mt-2 mb-0">
-                    Certificates issued after successful task completion.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-md-6">
-                <div class="glass-primary p-4 h-100">
-                  <i class="fas fa-clock text-warning me-2"></i>
-                  <strong>Flexible Duration</strong>
-                  <p class="small opacity-75 mt-2 mb-0">
-                    4–8 weeks programs designed for students.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-
-            <a href="#apply" class="btn btn-yellow btn-lg px-5">
-              Apply for Internship
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="#">
+                <img src="img/logo.png" alt="InternSpark" height="50" class="me-2">
+                <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span>
             </a>
 
-          </div>
-        </div>
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-dark fs-5"></i>
+            </button>
 
-        <!-- IMAGE -->
-        <div class="col-lg-6 text-center">
-          <img src="img/about.png" class="img-fluid rounded-4 shadow-lg reveal" alt="InternSpark Internship Program"
-            loading="lazy" style="transform:scale(1.03)">
-        </div>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
-      </div>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Internship
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
+
+                            <li><a class="dropdown-item" href="internProfile.html">
+                                    Intern Profile
+                                </a></li>
+                            <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+
+                            <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
+                            <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="assessment.html">Assessment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
+                            <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
+                            <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
+                            Apply Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home" class="hero position-relative">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- LEFT CONTENT -->
+                <div class="col-lg-6">
+                    <div class="reveal">
+
+                        <!-- Trust Badge -->
+                        <span class="badge bg-warning text-dark px-3 py-2 fs-6 mb-3">
+                            Powered by <a href="https://alfidotech.com" class="text-dark">Alfido Tech</a>
+                        </span>
+
+                        <h1 class="mt-3">
+                            Launch Your<br>
+                            <span style="color:var(--yellow)">Career Spark</span>
+                        </h1>
+
+                        <p class="lead fs-4 opacity-90 mb-4">
+                            Learn by building real-world projects with guided mentorship.<br>
+                            Designed for students & fresh professionals.
+                        </p>
+
+                        <!-- CTA -->
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="#apply" class="btn btn-yellow btn-lg px-5">
+                                🚀 Apply Now (60s)
+                            </a>
+                            <a href="#domains" class="btn btn-outline-light btn-lg px-4">
+                                Explore 19 Domains
+                            </a>
+                        </div>
+
+                        <!-- Social Proof -->
+                        <div class="mt-4 d-flex flex-wrap gap-3 align-items-center">
+                            <span class="hero-badge px-3 py-2">
+                                ✔ Verified Certificates
+                            </span>
+                            <span class="hero-badge px-3 py-2">
+                                ✔ Project-Based Learning
+                            </span>
+                            <span class="hero-badge px-3 py-2">
+                                ✔ Career Guidance
+                            </span>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- RIGHT CARD -->
+                <div class="col-lg-6 text-center">
+                    <div class="glass-primary p-5 mx-auto float" style="max-width:340px">
+
+                        <!-- Logo Icon -->
+                        <!-- <img src="img/logo.png" alt="InternSpark" style="height:60px" class="mb-3"> -->
+
+                        <h3 class="fw-bold fs-1 mb-2">4–8 Weeks</h3>
+                        <p class="opacity-90 fs-5 mb-3">
+                            Structured Internship Program
+                        </p>
+
+                        <!-- Mini stats -->
+                        <div class="d-flex justify-content-center gap-3 mt-3">
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">19+</h5>
+                                <small class="opacity-75">Domains</small>
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">10K+</h5>
+                                <small class="opacity-75">Learners</small>
+                            </div>
+                            <div class="text-center">
+                                <h5 class="fw-bold mb-0">100%</h5>
+                                <small class="opacity-75">Skill-Focused</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-4 reveal">How InternSpark Works</h2>
+                <p class="lead fs-4 opacity-90 reveal">
+                    A simple, transparent internship journey designed for real learning
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- STEP 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <!-- <span class="step-badge">Step 1</span> -->
+                        <i class="fas fa-file-signature fa-4x text-warning mb-4 service-icon"></i>
+                        <h3 class="h3 fw-bold mb-3">Apply Online</h3>
+                        <p class="opacity-90 fs-5">
+                            Select your preferred domain and complete the online application.
+                            The process is quick and beginner-friendly.
+                        </p>
+                        <a href="#apply" class="btn btn-warning fw-bold rounded-pill px-4 mt-3">
+                            Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STEP 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <!-- <span class="step-badge">Step 2</span> -->
+                        <i class="fas fa-tasks fa-4x text-success mb-4 service-icon"></i>
+                        <h3 class="h3 fw-bold mb-3">Offer Letter & Projects</h3>
+                        <p class="opacity-90 fs-5">
+                            Eligible candidates receive an offer letter and access to structured
+                            tasks, assignments, and domain-specific projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- STEP 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <!-- <span class="step-badge">Step 3</span> -->
+                        <i class="fas fa-certificate fa-4x text-primary mb-4 service-icon"></i>
+                        <h3 class="h3 fw-bold mb-3">Get Certified</h3>
+                        <p class="opacity-90 fs-5">
+                            After successful completion and evaluation, receive a verified
+                            Internship & Experience Certificate from InternSpark.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ================= DOMAINS ================= -->
+    <section id="domains" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5 pt-5">
+                <h2 class="section-title mb-4 reveal">Choose Your Domain</h2>
+                <p class="lead fs-4 opacity-90 reveal" style="animation-delay:.2s">
+                    19 cutting-edge domains with live projects, certification & placement support
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Frontend -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-code"></i></div>
+                        <span class="badge bg-warning text-dark mb-3">High Demand</span>
+                        <h3 class="h5 fw-bold mb-3">Frontend Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check text-success me-2"></i>HTML, CSS, JavaScript</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Responsive UI & UX</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Live Website Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">
+                            <i class="fas fa-rocket me-2"></i>Apply Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- React -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fab fa-react"></i></div>
+                        <span class="badge bg-info mb-3">Popular</span>
+                        <h3 class="h5 fw-bold mb-3">React.JS</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check text-success me-2"></i>Components & Hooks</li>
+                            <li><i class="fas fa-check text-success me-2"></i>API Integration</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Real-world Apps</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- MERN -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-server"></i></div>
+                        <span class="badge bg-success mb-3">Full Stack</span>
+                        <h3 class="h5 fw-bold mb-3">MERN Stack Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-check text-success me-2"></i>MongoDB, Express, React, Node</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Authentication & APIs</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Industry-level Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fab fa-python"></i></div>
+                        <span class="badge bg-warning mb-3">Core Skill</span>
+                        <h3 class="h5 fw-bold mb-3">Python Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Automation & Scripting</li>
+                            <li>File handling & APIs</li>
+                            <li>Mini + Major Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- C/C++ -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-microchip"></i></div>
+                        <span class="badge bg-secondary mb-3">Foundation</span>
+                        <h3 class="h5 fw-bold mb-3">C / C++ Programming</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>DSA & Logic Building</li>
+                            <li>Memory & Pointers</li>
+                            <li>Problem Solving</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fab fa-java"></i></div>
+                        <span class="badge bg-danger mb-3">Enterprise</span>
+                        <h3 class="h5 fw-bold mb-3">Java Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>OOPs & Collections</li>
+                            <li>JDBC & Spring Basics</li>
+                            <li>Backend Applications</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- .NET -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-globe"></i></div>
+                        <span class="badge bg-primary mb-3">Corporate</span>
+                        <h3 class="h5 fw-bold mb-3">.NET Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>C# & ASP.NET</li>
+                            <li>Web APIs</li>
+                            <li>Enterprise Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-chart-bar"></i></div>
+                        <span class="badge bg-success mb-3">Trending</span>
+                        <h3 class="h5 fw-bold mb-3">Data Analytics</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Excel, SQL, Power BI</li>
+                            <li>Dashboard Building</li>
+                            <li>Business Insights</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Business Analytics -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-chart-pie"></i></div>
+                        <span class="badge bg-info mb-3">Strategy</span>
+                        <h3 class="h5 fw-bold mb-3">Business Analytics</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Market Analysis</li>
+                            <li>Decision Making</li>
+                            <li>Case Studies</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-database"></i></div>
+                        <span class="badge bg-warning mb-3">Advanced</span>
+                        <h3 class="h5 fw-bold mb-3">Data Science</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Python & Statistics</li>
+                            <li>Data Modeling</li>
+                            <li>Capstone Project</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-brain"></i></div>
+                        <span class="badge bg-primary mb-3">Future Tech</span>
+                        <h3 class="h5 fw-bold mb-3">Artificial Intelligence</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>AI Concepts & Tools</li>
+                            <li>Real AI Use Cases</li>
+                            <li>Automation Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-bullhorn"></i></div>
+                        <span class="badge bg-danger mb-3">Creative</span>
+                        <h3 class="h5 fw-bold mb-3">Digital Marketing</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>SEO, SMO, Ads</li>
+                            <li>Content Strategy</li>
+                            <li>Live Campaigns</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- ML -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-robot"></i></div>
+                        <span class="badge bg-success mb-3">AI Track</span>
+                        <h3 class="h5 fw-bold mb-3">Machine Learning</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>ML Algorithms</li>
+                            <li>Model Training</li>
+                            <li>Prediction Systems</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-shield-alt"></i></div>
+                        <span class="badge bg-dark mb-3">Security</span>
+                        <h3 class="h5 fw-bold mb-3">Cybersecurity</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Ethical Hacking</li>
+                            <li>Network Security</li>
+                            <li>Security Labs</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- UX/UI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-paint-brush"></i></div>
+                        <span class="badge bg-warning mb-3">Design</span>
+                        <h3 class="h5 fw-bold mb-3">UX / UI Design</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Figma & Wireframes</li>
+                            <li>User Research</li>
+                            <li>Portfolio Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Android -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fab fa-android"></i></div>
+                        <span class="badge bg-success mb-3">Mobile</span>
+                        <h3 class="h5 fw-bold mb-3">Android Developer</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Kotlin / Java</li>
+                            <li>App Development</li>
+                            <li>Play Store Ready</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- VLSI -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-microchip"></i></div>
+                        <span class="badge bg-secondary mb-3">Core Tech</span>
+                        <h3 class="h5 fw-bold mb-3">VLSI</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Chip Design Basics</li>
+                            <li>RTL & Verification</li>
+                            <li>Industry Exposure</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Embedded -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-cogs"></i></div>
+                        <span class="badge bg-info mb-3">Hardware</span>
+                        <h3 class="h5 fw-bold mb-3">Embedded Systems</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Microcontrollers</li>
+                            <li>IoT Concepts</li>
+                            <li>Hardware Projects</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- Cloud -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-cloud"></i></div>
+                        <span class="badge bg-primary mb-3">Cloud</span>
+                        <h3 class="h5 fw-bold mb-3">Cloud Computing</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>AWS / Azure Basics</li>
+                            <li>Cloud Deployment</li>
+                            <li>Live Hosting</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+                <!-- DevOps -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="domain-card reveal">
+                        <div class="domain-icon"><i class="fas fa-cubes"></i></div>
+                        <span class="badge bg-danger mb-3">Ops</span>
+                        <h3 class="h5 fw-bold mb-3">DevOps</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>CI/CD Pipelines</li>
+                            <li>Docker & Git</li>
+                            <li>Automation Tools</li>
+                        </ul>
+                        <a href="#apply" class="btn btn-apply w-100">Apply Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-4 reveal">Our IT Services</h2>
+                <p class="lead fs-4 opacity-90 reveal">Specialized training in cutting-edge technologies</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <i class="fas fa-code fa-4x text-warning mb-4"></i>
+                        <h3 class="h3 fw-bold mb-3">Web Development</h3>
+                        <p class="opacity-90 fs-5">React, Node.js, Next.js, TypeScript</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <i class="fas fa-database fa-4x text-success mb-4"></i>
+                        <h3 class="h3 fw-bold mb-3">Data Analysis</h3>
+                        <p class="opacity-90 fs-5">Python, SQL, Power BI, Tableau</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card text-center reveal h-100">
+                        <i class="fas fa-cogs fa-4x text-primary mb-4"></i>
+                        <h3 class="h3 fw-bold mb-3">Automations</h3>
+                        <p class="opacity-90 fs-5">AI/ML, RPA, Selenium, Zapier</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-5 position-relative">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <!-- TEXT -->
+                <div class="col-lg-6">
+                    <div class="reveal">
+
+                        <span class="badge bg-warning text-dark fs-6 px-4 py-2 mb-4">
+                            Industry-Oriented Internship Program
+                        </span>
+
+                        <h2 class="display-5 fw-bold mb-4">
+                            Learn Skills That Matter in<br>
+                            <span style="color:var(--yellow)">Real-World Projects</span>
+                        </h2>
+
+                        <p class="fs-5 opacity-90 mb-4">
+                            InternSpark is a structured online internship platform powered by
+                            <strong>Alfido Tech</strong>, designed to help students and freshers
+                            gain hands-on experience through guided tasks, live projects, and
+                            industry-relevant tools.
+                        </p>
+
+                        <div class="row g-3 mb-4">
+
+                            <div class="col-md-6">
+                                <div class="glass-primary p-4 h-100">
+                                    <i class="fas fa-project-diagram text-warning me-2"></i>
+                                    <strong>Project-Based Learning</strong>
+                                    <p class="small opacity-75 mt-2 mb-0">
+                                        Work on real-world tasks instead of just theory.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="glass-primary p-4 h-100">
+                                    <i class="fas fa-user-graduate text-warning me-2"></i>
+                                    <strong>Beginner Friendly</strong>
+                                    <p class="small opacity-75 mt-2 mb-0">
+                                        No prior experience required. Start from basics.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="glass-primary p-4 h-100">
+                                    <i class="fas fa-certificate text-warning me-2"></i>
+                                    <strong>Verified Certification</strong>
+                                    <p class="small opacity-75 mt-2 mb-0">
+                                        Certificates issued after successful task completion.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="glass-primary p-4 h-100">
+                                    <i class="fas fa-clock text-warning me-2"></i>
+                                    <strong>Flexible Duration</strong>
+                                    <p class="small opacity-75 mt-2 mb-0">
+                                        4–8 weeks programs designed for students.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <a href="#apply" class="btn btn-yellow btn-lg px-5">
+                            Apply for Internship
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- IMAGE -->
+                <div class="col-lg-6 text-center">
+                    <img src="img/about.png" class="img-fluid rounded-4 shadow-lg reveal"
+                        alt="InternSpark Internship Program" loading="lazy" style="transform:scale(1.03)">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title mb-4 reveal">Frequently Asked Questions</h2>
+                <p class="lead opacity-90 reveal">
+                    Everything you need to know about InternSpark programs
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="accordion" id="faqAccordion">
+
+                        <!-- FAQ 1 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Do I need prior experience to join?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    No prior experience is required. InternSpark programs are designed for beginners
+                                    as well as intermediate learners. Training starts from fundamentals and gradually
+                                    moves to advanced concepts with hands-on projects.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 2 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    What kind of internship programs does InternSpark offer?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    InternSpark offers structured internship programs across multiple domains such as
+                                    Web Development, Data Analytics, AI & Automation, Cloud Computing, Design, and more.
+                                    Each program focuses on practical learning and real-world exposure.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 3 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    How long is the internship duration?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    Internship duration typically ranges between 4 to 8 weeks,
+                                    depending on the selected domain and learning track.
+                                    The focus is on skill-building, assignments, and guided project work.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 4 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Will I receive a certificate after completion?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    Yes. Upon successful completion of the internship requirements,
+                                    participants receive a verified Internship & Experience Certificate
+                                    issued by InternSpark (Powered by Alfido Tech).
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 5 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Does InternSpark guarantee placement?
+                                </button>
+                            </h3>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    InternSpark does not guarantee jobs or placements.
+                                    However, we provide career guidance, skill training,
+                                    resume support, and project experience to improve employability.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 6 -->
+                        <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq6">
+                                    Who operates InternSpark?
+                                </button>
+                            </h3>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    InternSpark is operated by Alfido Tech, an MSME (Udyam) registered
+                                    organization focused on education, skill development, and IT services.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ 7 -->
+                        <div class="accordion-item border-0 shadow rounded-4 overflow-hidden reveal">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faq7">
+                                    How can I apply for an internship?
+                                </button>
+                            </h3>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-dark opacity-90">
+                                    You can apply directly through the InternSpark website by clicking
+                                    the “Apply Now” button and filling out the registration form.
+                                    The application process is simple and takes only a few minutes.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold text-warning">InternSpark</h4>
+                    <p class="text-secondary mt-3">
+                        InternSpark is an online internship & skill development platform
+                        powered by Alfido Tech (MSME Registered).
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="footer-link">Home</a></li>
+                        <li><a href="#domains" class="footer-link">Domains</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#faq" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <!-- AdSense Safe Note -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Disclaimer</h6>
+                    <p class="text-secondary small">
+                        InternSpark does not guarantee jobs or placements.
+                        Internship certificates are issued based on task completion.
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="mb-2 mb-md-0 text-secondary small">
+                    © 2025 InternSpark | Powered by <a href="https://alfidotech.com">Alfido Tech</a>
+                </p>
+                <p class="text-secondary small">
+                    Made with ❤️ for learners
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- ================= CHATBOT ================= -->
+    <div class="chatbot-toggle pulse" id="chatToggle" title="AI Assistant">
+        <i class="fas fa-comments"></i>
     </div>
-  </section>
 
-
-  <!-- ================= FAQ ================= -->
-  <section id="faq" class="py-5 bg-light">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h2 class="section-title mb-4 reveal">Frequently Asked Questions</h2>
-        <p class="lead opacity-90 reveal">
-          Everything you need to know about InternSpark programs
-        </p>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-lg-9">
-          <div class="accordion" id="faqAccordion">
-
-            <!-- FAQ 1 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button fw-bold fs-5 text-dark" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#faq1">
-                  Do I need prior experience to join?
-                </button>
-              </h3>
-              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  No prior experience is required. InternSpark programs are designed for beginners
-                  as well as intermediate learners. Training starts from fundamentals and gradually
-                  moves to advanced concepts with hands-on projects.
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 2 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq2">
-                  What kind of internship programs does InternSpark offer?
-                </button>
-              </h3>
-              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  InternSpark offers structured internship programs across multiple domains such as
-                  Web Development, Data Analytics, AI & Automation, Cloud Computing, Design, and more.
-                  Each program focuses on practical learning and real-world exposure.
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 3 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq3">
-                  How long is the internship duration?
-                </button>
-              </h3>
-              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  Internship duration typically ranges between 4 to 8 weeks,
-                  depending on the selected domain and learning track.
-                  The focus is on skill-building, assignments, and guided project work.
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 4 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq4">
-                  Will I receive a certificate after completion?
-                </button>
-              </h3>
-              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  Yes. Upon successful completion of the internship requirements,
-                  participants receive a verified Internship & Experience Certificate
-                  issued by InternSpark (Powered by Alfido Tech).
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 5 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq5">
-                  Does InternSpark guarantee placement?
-                </button>
-              </h3>
-              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  InternSpark does not guarantee jobs or placements.
-                  However, we provide career guidance, skill training,
-                  resume support, and project experience to improve employability.
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 6 -->
-            <div class="accordion-item border-0 shadow mb-3 rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq6">
-                  Who operates InternSpark?
-                </button>
-              </h3>
-              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  InternSpark is operated by Alfido Tech, an MSME (Udyam) registered
-                  organization focused on education, skill development, and IT services.
-                </div>
-              </div>
-            </div>
-
-            <!-- FAQ 7 -->
-            <div class="accordion-item border-0 shadow rounded-4 overflow-hidden reveal">
-              <h3 class="accordion-header">
-                <button class="accordion-button collapsed fw-bold fs-5 text-dark" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#faq7">
-                  How can I apply for an internship?
-                </button>
-              </h3>
-              <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                <div class="accordion-body text-dark opacity-90">
-                  You can apply directly through the InternSpark website by clicking
-                  the “Apply Now” button and filling out the registration form.
-                  The application process is simple and takes only a few minutes.
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="pt-5 pb-4 mt-5">
-    <div class="container">
-      <div class="row gy-4">
-
-        <!-- Brand -->
-        <div class="col-lg-4 col-md-6">
-          <h4 class="fw-bold text-warning">InternSpark</h4>
-          <p class="text-secondary mt-3">
-            InternSpark is an online internship & skill development platform
-            powered by Alfido Tech (MSME Registered).
-          </p>
+    <div class="chatbot-panel" id="chatPanel">
+        <div class="bg-warning text-dark p-3 fw-bold fs-6 border-bottom d-flex align-items-center">
+            <i class="fas fa-robot me-2"></i> InternSpark Assistant
+            <button class="btn-close ms-auto" id="closeChat"></button>
         </div>
 
-        <!-- Quick Links -->
-        <div class="col-lg-2 col-md-6">
-          <h6 class="fw-bold mb-3">Quick Links</h6>
-          <ul class="list-unstyled">
-            <li><a href="#home" class="footer-link">Home</a></li>
-            <li><a href="#domains" class="footer-link">Domains</a></li>
-            <li><a href="#about" class="footer-link">About</a></li>
-            <li><a href="#faq" class="footer-link">FAQ</a></li>
-          </ul>
+        <div class="chatbot-messages" id="chatMessages"></div>
+
+        <div class="p-3 border-top">
+            <div class="input-group">
+                <input type="text" class="form-control rounded-pill" id="chatInput"
+                    placeholder="Ask about internships..." autocomplete="off">
+                <button class="btn btn-warning rounded-pill ms-2 px-3" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
         </div>
-
-        <!-- Legal -->
-        <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold mb-3">Legal</h6>
-          <ul class="list-unstyled">
-            <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
-            <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
-            <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
-            <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
-          </ul>
-        </div>
-
-        <!-- AdSense Safe Note -->
-        <div class="col-lg-3 col-md-6">
-          <h6 class="fw-bold mb-3">Disclaimer</h6>
-          <p class="text-secondary small">
-            InternSpark does not guarantee jobs or placements.
-            Internship certificates are issued based on task completion.
-          </p>
-        </div>
-
-      </div>
-
-      <hr class="my-4 border-secondary">
-
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-        <p class="mb-2 mb-md-0 text-secondary small">
-          © 2025 InternSpark | Powered by <a href="https://alfidotech.com">Alfido Tech</a>
-        </p>
-        <p class="text-secondary small">
-          Made with ❤️ for learners
-        </p>
-      </div>
-    </div>
-  </footer>
-
-
-
-  <!-- ================= CHATBOT ================= -->
-  <div class="chatbot-toggle pulse" id="chatToggle" title="AI Assistant">
-    <i class="fas fa-comments"></i>
-  </div>
-
-  <div class="chatbot-panel" id="chatPanel">
-    <div class="bg-warning text-dark p-3 fw-bold fs-6 border-bottom d-flex align-items-center">
-      <i class="fas fa-robot me-2"></i> InternSpark Assistant
-      <button class="btn-close ms-auto" id="closeChat"></button>
     </div>
 
-    <div class="chatbot-messages" id="chatMessages"></div>
-
-    <div class="p-3 border-top">
-      <div class="input-group">
-        <input type="text" class="form-control rounded-pill" id="chatInput" placeholder="Ask about internships..."
-          autocomplete="off">
-        <button class="btn btn-warning rounded-pill ms-2 px-3" id="sendBtn">
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </div>
-    </div>
-  </div>
 
 
 
-
-  <!-- ================= APPLY MODAL ================= -->
-  <div class="modal fade" id="applyModal" tabindex="-1">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content rounded-5 border-0 shadow-lg">
-        <div class="modal-header border-0 bg-warning text-dark rounded-top-5">
-          <h5 class="modal-title fw-bold mb-0">
-            <i class="fas fa-rocket me-2"></i>Secure Your Internship (60 Seconds)
-          </h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body p-5">
-          <div class="alert alert-success border-0 rounded-4 mb-4">
-            <i class="fas fa-star me-2"></i>95% placement rate • Limited seats • Start in 7 days
-          </div>
-          <form id="applyForm">
-            <div class="row g-3">
-              <div class="col-md-6">
-                <input type="text" class="form-control" placeholder="Full Name *" required>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" placeholder="Email *" required>
-              </div>
-              <div class="col-12">
-                <select class="form-select" required>
-                  <option value="">Choose Your Domain</option>
-                  <option>Full Stack Developer</option>
-                  <option>Data Analyst</option>
-                  <option>AI Automation Engineer</option>
-                </select>
-              </div>
-              <div class="col-12">
-                <input type="tel" class="form-control" placeholder="Phone (WhatsApp) *">
-              </div>
-              <div class="col-12">
-                <textarea class="form-control" rows="3" placeholder="Why InternSpark? (Optional)"></textarea>
-              </div>
+    <!-- ================= APPLY MODAL ================= -->
+    <div class="modal fade" id="applyModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content rounded-5 border-0 shadow-lg">
+                <div class="modal-header border-0 bg-warning text-dark rounded-top-5">
+                    <h5 class="modal-title fw-bold mb-0">
+                        <i class="fas fa-rocket me-2"></i>Secure Your Internship (60 Seconds)
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <div class="alert alert-success border-0 rounded-4 mb-4">
+                        <i class="fas fa-star me-2"></i>95% placement rate • Limited seats • Start in 7 days
+                    </div>
+                    <form id="applyForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" placeholder="Full Name *" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" placeholder="Email *" required>
+                            </div>
+                            <div class="col-12">
+                                <select class="form-select" required>
+                                    <option value="">Choose Your Domain</option>
+                                    <option>Full Stack Developer</option>
+                                    <option>Data Analyst</option>
+                                    <option>AI Automation Engineer</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <input type="tel" class="form-control" placeholder="Phone (WhatsApp) *">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control" rows="3"
+                                    placeholder="Why InternSpark? (Optional)"></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0 p-5">
+                    <button type="button" class="btn btn-success w-100 rounded-pill fw-bold fs-6 py-3"
+                        onclick="submitForm()">
+                        <i class="fas fa-paper-plane me-2"></i>Submit Application
+                    </button>
+                </div>
             </div>
-          </form>
         </div>
-        <div class="modal-footer border-0 p-5">
-          <button type="button" class="btn btn-success w-100 rounded-pill fw-bold fs-6 py-3" onclick="submitForm()">
-            <i class="fas fa-paper-plane me-2"></i>Submit Application
-          </button>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- ================= FOOTER ================= -->
-
-
-  <!-- ================= JS ================= -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Smooth scrolling
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', e => {
-        e.preventDefault();
-        const target = document.querySelector(anchor.getAttribute('href'));
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    });
-
-    // Scroll animations
-    const obs = new IntersectionObserver(e => {
-      e.forEach(i => {
-        if (i.isIntersecting) i.target.classList.add("active");
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
-
-    // Navbar scroll effect
-    window.addEventListener('scroll', () => {
-      const navbar = document.querySelector('.navbar');
-      navbar.style.background = window.scrollY > 50
-        ? 'rgba(15,15,35,0.95)'
-        : 'rgba(0,0,0,0.75)';
-    });
-
-    // Chatbot functionality
-    const chatToggle = document.getElementById('chatToggle');
-    const chatPanel = document.getElementById('chatPanel');
-    const chatInput = document.getElementById('chatInput');
-    const sendBtn = document.getElementById('sendBtn');
-    const chatMessages = document.getElementById('chatMessages');
-    const closeChat = document.getElementById('closeChat');
-
-    let greeted = false;
-
-    chatToggle.addEventListener('click', () => {
-      const isOpen = chatPanel.style.display === 'flex';
-      chatPanel.style.display = isOpen ? 'none' : 'flex';
-
-      if (!greeted && !isOpen) {
-        addMessage("👋 Hi! I’m InternSpark AI Assistant. Ask me about internships, domains, certificates or placements.");
-        greeted = true;
-      }
-    });
+    <!-- ================= FOOTER ================= -->
 
 
-    closeChat.addEventListener('click', () => {
-      chatPanel.style.display = 'none';
-    });
+    <!-- ================= JS ================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(anchor.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
 
-    function addMessage(text, isUser = false) {
-      const div = document.createElement('div');
-      div.className = `message ${isUser ? 'user' : 'bot'}`;
-      div.textContent = text;
-      chatMessages.appendChild(div);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
+        // Scroll animations
+        const obs = new IntersectionObserver(e => {
+            e.forEach(i => {
+                if (i.isIntersecting) i.target.classList.add("active");
+            });
+        }, { threshold: 0.15 });
 
-    const botResponses = {
+        document.querySelectorAll(".reveal").forEach(el => obs.observe(el));
 
-      'hi|hello|hey':
-        '👋 Welcome to InternSpark! I can help you with internship domains, certificates, LOR, report cards, and application details.',
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            navbar.style.background = window.scrollY > 50
+                ? 'rgba(15,15,35,0.95)'
+                : 'rgba(0,0,0,0.75)';
+        });
 
-      'domain|domains|field|course':
-        '📚 InternSpark offers 19+ internship domains including Web Development, Data Analytics, AI Automation, Cloud, Cybersecurity, and more. Which domain would you like to explore?',
+        // Chatbot functionality
+        const chatToggle = document.getElementById('chatToggle');
+        const chatPanel = document.getElementById('chatPanel');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+        const chatMessages = document.getElementById('chatMessages');
+        const closeChat = document.getElementById('closeChat');
 
-      'duration|time|weeks':
-        '⏳ Internship duration is flexible and usually ranges from 4 to 8 weeks, depending on the selected domain.',
+        let greeted = false;
 
-      'apply|application|register':
-        '📝 You can apply online by clicking the “Apply Now” button and filling out the registration form. The process takes less than 2 minutes.',
+        chatToggle.addEventListener('click', () => {
+            const isOpen = chatPanel.style.display === 'flex';
+            chatPanel.style.display = isOpen ? 'none' : 'flex';
 
-      'certificate|certification':
-        '📜 Yes! After successful task completion, you will receive a verified Internship & Experience Certificate from InternSpark.',
-
-      'lor|recommendation':
-        '✉️ A Letter of Recommendation (LOR) may be provided to interns who demonstrate consistent performance and successfully complete assigned tasks.',
-
-      'report|report card|performance':
-        '📊 Each intern receives a performance-based report card highlighting task completion, skills learned, and overall progress.',
-
-      'placement|job|salary|stipend':
-        '🎯 InternSpark focuses on skill development and practical experience. While we do not guarantee jobs or stipends, we provide career guidance and project experience to improve employability.',
-
-      'contact|support|help':
-        '📞 For any assistance, you can reach out through our official website or support channels listed in the footer.',
-
-      'default':
-        '😊 Feel free to ask about internship domains, certificates, LOR, report cards, duration, or how to apply!'
-    };
+            if (!greeted && !isOpen) {
+                addMessage("👋 Hi! I’m InternSpark AI Assistant. Ask me about internships, domains, certificates or placements.");
+                greeted = true;
+            }
+        });
 
 
-    function getBotReply(message) {
-      const lower = message.toLowerCase();
-      for (let pattern in botResponses) {
-        if (new RegExp(pattern).test(lower)) return botResponses[pattern];
-      }
-      return botResponses.default;
-    }
+        closeChat.addEventListener('click', () => {
+            chatPanel.style.display = 'none';
+        });
 
-    function sendMessage() {
-      const text = chatInput.value.trim();
-      if (!text) return;
-      addMessage(text, true);
-      chatInput.value = '';
-      setTimeout(() => addMessage(getBotReply(text)), 800);
-    }
+        function addMessage(text, isUser = false) {
+            const div = document.createElement('div');
+            div.className = `message ${isUser ? 'user' : 'bot'}`;
+            div.textContent = text;
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
 
-    sendBtn.addEventListener('click', sendMessage);
-    chatInput.addEventListener('keypress', e => e.key === 'Enter' && sendMessage());
+        const botResponses = {
 
-    function submitForm() {
-      const form = document.getElementById('applyForm');
-      if (form.checkValidity()) {
-        alert('🎉 Application submitted! You will hear from us within 24 hours. 🚀');
-        bootstrap.Modal.getInstance(document.getElementById('applyModal')).hide();
-        form.reset();
-      } else {
-        alert('Please fill all required fields! ⭐');
-      }
-    }
-  </script>
+            'hi|hello|hey':
+                '👋 Welcome to InternSpark! I can help you with internship domains, certificates, LOR, report cards, and application details.',
+
+            'domain|domains|field|course':
+                '📚 InternSpark offers 19+ internship domains including Web Development, Data Analytics, AI Automation, Cloud, Cybersecurity, and more. Which domain would you like to explore?',
+
+            'duration|time|weeks':
+                '⏳ Internship duration is flexible and usually ranges from 4 to 8 weeks, depending on the selected domain.',
+
+            'apply|application|register':
+                '📝 You can apply online by clicking the “Apply Now” button and filling out the registration form. The process takes less than 2 minutes.',
+
+            'certificate|certification':
+                '📜 Yes! After successful task completion, you will receive a verified Internship & Experience Certificate from InternSpark.',
+
+            'lor|recommendation':
+                '✉️ A Letter of Recommendation (LOR) may be provided to interns who demonstrate consistent performance and successfully complete assigned tasks.',
+
+            'report|report card|performance':
+                '📊 Each intern receives a performance-based report card highlighting task completion, skills learned, and overall progress.',
+
+            'placement|job|salary|stipend':
+                '🎯 InternSpark focuses on skill development and practical experience. While we do not guarantee jobs or stipends, we provide career guidance and project experience to improve employability.',
+
+            'contact|support|help':
+                '📞 For any assistance, you can reach out through our official website or support channels listed in the footer.',
+
+            'default':
+                '😊 Feel free to ask about internship domains, certificates, LOR, report cards, duration, or how to apply!'
+        };
+
+
+        function getBotReply(message) {
+            const lower = message.toLowerCase();
+            for (let pattern in botResponses) {
+                if (new RegExp(pattern).test(lower)) return botResponses[pattern];
+            }
+            return botResponses.default;
+        }
+
+        function sendMessage() {
+            const text = chatInput.value.trim();
+            if (!text) return;
+            addMessage(text, true);
+            chatInput.value = '';
+            setTimeout(() => addMessage(getBotReply(text)), 800);
+        }
+
+        sendBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', e => e.key === 'Enter' && sendMessage());
+
+        function submitForm() {
+            const form = document.getElementById('applyForm');
+            if (form.checkValidity()) {
+                alert('🎉 Application submitted! You will hear from us within 24 hours. 🚀');
+                bootstrap.Modal.getInstance(document.getElementById('applyModal')).hide();
+                form.reset();
+            } else {
+                alert('Please fill all required fields! ⭐');
+            }
+        }
+    </script>
 </body>
 
 </html>
