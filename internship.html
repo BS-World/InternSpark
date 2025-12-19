@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,10 @@
   <title>Apply Now | InternSpark Remote IT Internship 2025</title>
 
   <!-- SEO -->
-  <meta name="description" content="Apply for InternSpark Remote IT Internship 2025. Project-based internships, work from home, verified certificates, and 19+ domains.">
-  <meta name="keywords" content="InternSpark Internship, Remote Internship 2025, Online Internship India, Internship with Certificate">
+  <meta name="description"
+    content="Apply for InternSpark Remote IT Internship 2025. Project-based internships, work from home, verified certificates, and 19+ domains.">
+  <meta name="keywords"
+    content="InternSpark Internship, Remote Internship 2025, Online Internship India, Internship with Certificate">
   <meta name="author" content="InternSpark">
   <meta name="robots" content="index, follow">
 
@@ -22,68 +25,101 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-   <style>
-  @keyframes pop {
-    0% { transform: scale(0.5); opacity: 0; }
-    50% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(1); }
-  }
-</style>
-<style>
-  /* Overlay */
-  .popup-overlay {
-    display: none;
-    position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.6);
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    opacity: 0;
-    transition: opacity 0.5s ease; /* fade effect */
-  }
-  .popup-overlay.show {
-    display: flex;
-    opacity: 1;
-  }
-  .popup-overlay.hide {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-  }
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
 
-  /* Popup Box */
-  .popup-box {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    animation: fadeInUp 0.4s ease;
-  }
+      50% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
 
-  /* Success Tick */
-  .tick {
-    font-size: 60px;
-    color: green;
-    animation: pop 0.4s ease;
-  }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <style>
+    /* Overlay */
+    .popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      /* fade effect */
+    }
 
-  /* Tick Pop Animation */
-  @keyframes pop {
-    0% { transform: scale(0.5); opacity: 0; }
-    50% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(1); }
-  }
+    .popup-overlay.show {
+      display: flex;
+      opacity: 1;
+    }
 
-  /* Box Fade-in */
-  @keyframes fadeInUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-  }
-</style>
+    .popup-overlay.hide {
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    /* Popup Box */
+    .popup-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      max-width: 400px;
+      width: 90%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      animation: fadeInUp 0.4s ease;
+    }
+
+    /* Success Tick */
+    .tick {
+      font-size: 60px;
+      color: green;
+      animation: pop 0.4s ease;
+    }
+
+    /* Tick Pop Animation */
+    @keyframes pop {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+
+      50% {
+        transform: scale(1.2);
+        opacity: 1;
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* Box Fade-in */
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  </style>
   <style>
     body {
       font-family: 'Heebo', sans-serif;
@@ -115,43 +151,52 @@
     }
   </style>
   <style>
-  .social-widget {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 9999;
-  }
+    .social-widget {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 9999;
+    }
 
-  .social-widget a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
+    .social-widget a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
 
-  .facebook { background: #3b5998; }
-  .instagram { background: #E1306C; }
-  .linkedin { background: #0077b5; }
-  .whatsapp { background: #25D366; }
+    .facebook {
+      background: #3b5998;
+    }
 
-  .social-widget a:hover {
-    transform: scale(1.2);
-    opacity: 0.9;
-  }
+    .instagram {
+      background: #E1306C;
+    }
 
-  
-</style>
+    .linkedin {
+      background: #0077b5;
+    }
+
+    .whatsapp {
+      background: #25D366;
+    }
+
+    .social-widget a:hover {
+      transform: scale(1.2);
+      opacity: 0.9;
+    }
+  </style>
   <style>
     body {
       padding-top: 80px;
@@ -164,7 +209,85 @@
 
 
 <body>
-     <div id="header"></div>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html">
+        <img src="img/navbar-logo.png" alt="InternSpark Logo" height="70" class="me-2">
+        <!-- <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span> -->
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav">
+        <i class="fas fa-bars text-dark fs-5"></i>
+      </button>
+
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+          <li class="nav-item">
+            <a class="nav-link text-white active" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+              Internship
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+              <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
+
+              <li><a class="dropdown-item" href="internProfile.html">
+                  Intern Profile
+                </a></li>
+              <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+
+              <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
+              <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
+
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="assessment.html">Assessment</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+              Resources
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+              <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
+              <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
+              <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
+              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
+              Apply Now
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
   <!-- Hero -->
   <section class="hero-header">
     <h1 class="fw-bold">Remote IT Internship 2026</h1>
@@ -184,15 +307,17 @@
           <li class="list-group-item"><strong>Duration:</strong> 1, 2, 4, or 6 months or 45 Days</li>
           <li class="list-group-item"><strong>Start Date:</strong> <span class="text-danger">01 Feb 2026</span></li>
           <li class="list-group-item"><strong>Mode:</strong> Online & Task-Based</li>
-          <li class="list-group-item"><strong>Perks:</strong> Offer Letter, Completion Certificate, LOR, and Weekly Report Card</li>
+          <li class="list-group-item"><strong>Perks:</strong> Offer Letter, Completion Certificate, LOR, and Weekly
+            Report Card</li>
           <li class="list-group-item"><strong>Domains:</strong> 19+</li>
         </ul>
-        <p class="alert alert-primary text-center mt-3">📌 Apply today – Offer Letter will be sent 2 days before start date.</p>
+        <p class="alert alert-primary text-center mt-3">📌 Apply today – Offer Letter will be sent 2 days before start
+          date.</p>
       </div>
     </div>
   </section>
-  
-<!-- <div class="social-widget">
+
+  <!-- <div class="social-widget">
   <a href="https://www.facebook.com/profile.php?id=61552559429791" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
   <a href="https://www.instagram.com/alfido_tech/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
   <a href="https://www.linkedin.com/company/alfido-tech/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
@@ -211,13 +336,15 @@
           <!-- Full Name -->
           <div class="mb-4">
             <label for="fullName" class="form-label fw-semibold"><i class="fa-solid fa-user"></i> Full Name</label>
-            <input type="text" class="form-control form-control-lg rounded-3" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <input type="text" class="form-control form-control-lg rounded-3" id="fullName" name="fullName"
+              placeholder="Enter your full name" required>
           </div>
 
           <!-- Email -->
           <div class="mb-4">
             <label for="email" class="form-label fw-semibold"><i class="fa-solid fa-envelope"></i> Email ID</label>
-            <input type="email" class="form-control form-control-lg rounded-3" id="email" name="email" placeholder="example@email.com" required>
+            <input type="email" class="form-control form-control-lg rounded-3" id="email" name="email"
+              placeholder="example@email.com" required>
           </div>
 
           <!-- Gender -->
@@ -235,13 +362,16 @@
 
           <!-- WhatsApp -->
           <div class="mb-4">
-            <label for="whatsapp" class="form-label fw-semibold"><i class="fa-brands fa-whatsapp"></i> WhatsApp Number</label>
-            <input type="tel" class="form-control form-control-lg rounded-3" id="whatsapp" name="whatsapp" placeholder="+91 9977465250" required>
+            <label for="whatsapp" class="form-label fw-semibold"><i class="fa-brands fa-whatsapp"></i> WhatsApp
+              Number</label>
+            <input type="tel" class="form-control form-control-lg rounded-3" id="whatsapp" name="whatsapp"
+              placeholder="+91 9977465250" required>
           </div>
 
           <!-- Domain -->
           <div class="mb-4">
-            <label for="internshipDomain" class="form-label fw-semibold"><i class="fa-solid fa-laptop-code"></i> Select Internship Domain</label>
+            <label for="internshipDomain" class="form-label fw-semibold"><i class="fa-solid fa-laptop-code"></i> Select
+              Internship Domain</label>
             <select name="internshipDomain" id="internshipDomain" class="form-select form-select-lg rounded-3" required>
               <option value="">Select Your Domain...</option>
               <option>Frontend Developer</option>
@@ -270,57 +400,173 @@
 
           <!-- College -->
           <div class="mb-4">
-            <label for="collegeName" class="form-label fw-semibold"><i class="fa-solid fa-building-columns"></i> College Name</label>
-            <input type="text" class="form-control form-control-lg rounded-3" id="collegeName" name="collegeName" placeholder="Your college name" required>
+            <label for="collegeName" class="form-label fw-semibold"><i class="fa-solid fa-building-columns"></i> College
+              Name</label>
+            <input type="text" class="form-control form-control-lg rounded-3" id="collegeName" name="collegeName"
+              placeholder="Your college name" required>
           </div>
 
           <!-- Qualification -->
           <div class="mb-4">
-            <label for="qualification" class="form-label fw-semibold"><i class="fa-solid fa-graduation-cap"></i> Qualification</label>
-            <input type="text" class="form-control form-control-lg rounded-3" id="qualification" name="qualification" placeholder="e.g. B.Tech, MCA" required>
+            <label for="qualification" class="form-label fw-semibold"><i class="fa-solid fa-graduation-cap"></i>
+              Qualification</label>
+            <input type="text" class="form-control form-control-lg rounded-3" id="qualification" name="qualification"
+              placeholder="e.g. B.Tech, MCA" required>
           </div>
 
           <!-- Passing Year -->
           <div class="mb-4">
-            <label for="passingYear" class="form-label fw-semibold"><i class="fa-solid fa-calendar-check"></i> Passing Year</label>
-            <input type="text" class="form-control form-control-lg rounded-3" id="passingYear" name="passingYear" placeholder="e.g. 2025" required>
+            <label for="passingYear" class="form-label fw-semibold"><i class="fa-solid fa-calendar-check"></i> Passing
+              Year</label>
+            <input type="text" class="form-control form-control-lg rounded-3" id="passingYear" name="passingYear"
+              placeholder="e.g. 2025" required>
           </div>
 
           <!-- Buttons -->
           <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm me-2"><i class="fa-solid fa-paper-plane"></i> Submit</button>
-            <button type="reset" class="btn btn-outline-secondary btn-lg px-4"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+            <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm me-2"><i
+                class="fa-solid fa-paper-plane"></i> Submit</button>
+            <button type="reset" class="btn btn-outline-secondary btn-lg px-4"><i class="fa-solid fa-rotate-right"></i>
+              Reset</button>
           </div>
         </form>
       </div>
     </div>
-    
-</section>
+
+  </section>
 
 
-<!-- Popup Modal -->
-<div id="popupOverlay" class="popup-overlay">
-  <div id="popup" class="popup-box">
+  <!-- Popup Modal -->
+  <div id="popupOverlay" class="popup-overlay">
+    <div id="popup" class="popup-box">
       <!-- Success Tick Animation -->
       <div class="tick">✔️</div>
 
       <h2 class="text-success mt-3">Registration Completed</h2>
       <p>Your registration is successfully completed!</p>
       <button onclick="closePopup()" class="btn btn-primary mt-2">Close</button>
+    </div>
   </div>
-</div>
 
-<!-- The previous script and footer code here are redundant and should be removed.
+  <!-- The previous script and footer code here are redundant and should be removed.
 Popup functionality is already implemented above with openPopup() and closePopup() called on form submit.
 No extra code is needed here. -->
 
-<div id="footer"></div>
-<script>
-  fetch("/footer.html")
-    .then(res => res.text())
-    .then(data => document.getElementById("footer").innerHTML = data);
-</script>
-  
+ <footer class="pt-5 pb-4 mt-5 position-relative">
+    <div class="container">
+        <div class="row gy-4">
+
+            <!-- Brand -->
+            <div class="col-lg-4 col-md-6">
+                <img src="img/navbar-logo.png" alt="InternSpark Logo" class="footer-logo">
+
+                <p class="text-secondary mt-3">
+                    InternSpark is an online internship & skill development platform
+                    powered by Alfido Tech.
+                </p>
+
+                <!-- Social Media -->
+                <div class="d-flex gap-3 mt-3">
+                    <a href="https://www.linkedin.com/company/internspark" target="_blank" class="footer-social"
+                        aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.instagram.com/internspark" target="_blank" class="footer-social"
+                        aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://x.com/internspark" target="_blank" class="footer-social" aria-label="Twitter">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@internspark" target="_blank" class="footer-social"
+                        aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h6 class="fw-bold mb-3">Quick Links</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="domains.html" class="footer-link">Domains</a></li>
+                    <li><a href="about.html" class="footer-link">About</a></li>
+                    <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                    <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Legal</h6>
+                <ul class="list-unstyled">
+                    <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                    <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
+                    <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                    <li><a href="/accessibility.html" class="footer-link">Accessibility</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Address -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="fw-bold mb-3">Contact & Address</h6>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-map-marker-alt me-2 text-warning"></i>
+                    Bengaluru, Karnataka – 560095, India
+                </p>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-envelope me-2 text-warning"></i>
+                    <a href="mailto:info@internspark.in" class="footer-link">
+                        info@internspark.in
+                    </a>
+                </p>
+
+                <p class="text-secondary small mb-2">
+                    <i class="fas fa-phone me-2 text-warning"></i>
+                    <a href="tel:+919977465250" class="footer-link">
+                        +91 99774 65250
+                    </a>
+                </p>
+
+                <p class="text-secondary small mb-0">
+                    <i class="fas fa-headset me-2 text-warning"></i>
+                    <a href="mailto:support@internspark.in" class="footer-link">
+                        support@internspark.in
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr class="my-4 border-secondary">
+
+        <!-- Bottom Bar -->
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+            <p class="mb-2 mb-md-0 text-secondary small">
+                © 2025 InternSpark | Powered by
+                <a href="https://alfidotech.com" target="_blank">Alfido Tech</a>
+            </p>
+            <p class="text-secondary small mb-0">
+                Made with ❤️ for learners
+            </p>
+        </div>
+
+        <!-- Legal Safe Disclaimer -->
+        <p class="text-secondary small text-center mt-3">
+            InternSpark is a private skill-development initiative and is not affiliated
+            with AICTE or any government organization.
+        </p>
+    </div>
+</footer>
+<!-- ================= Footer End ================= -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 
   <!-- WhatsApp Button -->
   <div id="whatsapp-btn">
@@ -330,28 +576,28 @@ No extra code is needed here. -->
   </div>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 
   <!-- Popup + Form JS -->
   <script>
-  // Show timer popup first, then success popup after submit
+    // Show timer popup first, then success popup after submit
 
-  // Create timer popup dynamically
-  function showTimerPopup() {
-    // Remove if already exists
-    let old = document.getElementById('timerPopupOverlay');
-    if (old) old.remove();
+    // Create timer popup dynamically
+    function showTimerPopup() {
+      // Remove if already exists
+      let old = document.getElementById('timerPopupOverlay');
+      if (old) old.remove();
 
-    // Create overlay
-    const overlay = document.createElement('div');
-    overlay.id = 'timerPopupOverlay';
-    overlay.className = 'popup-overlay show';
-    overlay.style.display = 'flex';
+      // Create overlay
+      const overlay = document.createElement('div');
+      overlay.id = 'timerPopupOverlay';
+      overlay.className = 'popup-overlay show';
+      overlay.style.display = 'flex';
 
-    // Create popup box
-    const box = document.createElement('div');
-    box.className = 'popup-box';
-    box.innerHTML = `
+      // Create popup box
+      const box = document.createElement('div');
+      box.className = 'popup-box';
+      box.innerHTML = `
       <div style="font-size:48px; color:#007bff; margin-bottom:10px;">
         <i class="fa-solid fa-hourglass-half"></i>
       </div>
@@ -359,88 +605,88 @@ No extra code is needed here. -->
       <div id="timerCount" style="font-size:2rem; font-weight:bold;">Please wait...</div>
       <div class="text-muted mt-2">Please wait while we submit your registration.</div>
     `;
-    overlay.appendChild(box);
-    document.body.appendChild(overlay);
-  }
+      overlay.appendChild(box);
+      document.body.appendChild(overlay);
+    }
 
-  function closeTimerPopup() {
-    const overlay = document.getElementById('timerPopupOverlay');
-    if (overlay) {
-      overlay.classList.remove('show');
-      overlay.classList.add('hide');
+    function closeTimerPopup() {
+      const overlay = document.getElementById('timerPopupOverlay');
+      if (overlay) {
+        overlay.classList.remove('show');
+        overlay.classList.add('hide');
+        setTimeout(() => {
+          overlay.remove();
+        }, 500);
+      }
+    }
+
+    function openPopup() {
+      const popup = document.getElementById('popupOverlay');
       setTimeout(() => {
-        overlay.remove();
+        popup.style.display = "flex";
+        popup.classList.remove("hide");
+        popup.classList.add("show");
+      }, 1);
+
+      // Auto-close after 9 sec
+      setTimeout(() => {
+        closePopup();
+      }, 9000);
+    }
+
+    function closePopup() {
+      const popup = document.getElementById('popupOverlay');
+      popup.classList.remove("show");
+      popup.classList.add("hide");
+
+      setTimeout(() => {
+        popup.style.display = "none";
+        document.getElementById("registrationForm").reset();
       }, 500);
     }
-  }
 
-  function openPopup() {
-    const popup = document.getElementById('popupOverlay');
-    setTimeout(() => {
-      popup.style.display = "flex";
-      popup.classList.remove("hide");
-      popup.classList.add("show");
-    }, 1);
+    // Only handle submit once
+    let isSubmitting = false;
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (isSubmitting) return;
+      isSubmitting = true;
 
-    // Auto-close after 9 sec
-    setTimeout(() => {
-      closePopup();
-    }, 9000);
-  }
+      // Show timer popup
+      showTimerPopup();
 
-  function closePopup() {
-    const popup = document.getElementById('popupOverlay');
-    popup.classList.remove("show");
-    popup.classList.add("hide");
+      const formData = {
+        fullName: document.getElementById("fullName").value,
+        email: document.getElementById("email").value,
+        gender: document.querySelector('input[name="gender"]:checked').value,
+        whatsapp: document.getElementById("whatsapp").value,
+        internshipDomain: document.getElementById("internshipDomain").value,
+        collegeName: document.getElementById("collegeName").value,
+        qualification: document.getElementById("qualification").value,
+        passingYear: document.getElementById("passingYear").value
+      };
 
-    setTimeout(() => {
-      popup.style.display = "none";
-      document.getElementById("registrationForm").reset();
-    }, 500);
-  }
-
-  // Only handle submit once
-  let isSubmitting = false;
-  document.getElementById("registrationForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    if (isSubmitting) return;
-    isSubmitting = true;
-
-    // Show timer popup
-    showTimerPopup();
-
-    const formData = {
-      fullName: document.getElementById("fullName").value,
-      email: document.getElementById("email").value,
-      gender: document.querySelector('input[name="gender"]:checked').value,
-      whatsapp: document.getElementById("whatsapp").value,
-      internshipDomain: document.getElementById("internshipDomain").value,
-      collegeName: document.getElementById("collegeName").value,
-      qualification: document.getElementById("qualification").value,
-      passingYear: document.getElementById("passingYear").value
-    };
-
-    // Submit data, then show popup
-    fetch("https://script.google.com/macros/s/AKfycbw-vH2jcPQui_XoH5jZA9wqD2I9VmXJjf5SzR_4hBUucBo7QisS0CZIS4Uf6vCNxZOQ/exec", {
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" }
-    })
-    .then(() => {
-      closeTimerPopup();
-      openPopup(); // show success popup
-      isSubmitting = false;
-    })
-    .catch(err => {
-      closeTimerPopup();
-      openPopup(); // still show popup on error
-      console.error("Error:", err);
-      isSubmitting = false;
+      // Submit data, then show popup
+      fetch("https://script.google.com/macros/s/AKfycbw-vH2jcPQui_XoH5jZA9wqD2I9VmXJjf5SzR_4hBUucBo7QisS0CZIS4Uf6vCNxZOQ/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" }
+      })
+        .then(() => {
+          closeTimerPopup();
+          openPopup(); // show success popup
+          isSubmitting = false;
+        })
+        .catch(err => {
+          closeTimerPopup();
+          openPopup(); // still show popup on error
+          console.error("Error:", err);
+          isSubmitting = false;
+        });
     });
-  });
 
-</script>
-<script src="assets/loader.js"></script>
+  </script>
 </body>
+
 </html>
