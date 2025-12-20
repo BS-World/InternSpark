@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ================= BASIC META ================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Internship Task Submission | InternSpark Remote Internships</title>
+
+    <meta name="description"
+        content="Submit your internship tasks at InternSpark. Upload GitHub and LinkedIn task links to complete your remote IT internship and receive verified certificates.">
+
+    <meta name="keywords"
+        content="InternSpark Submission, Internship Task Submission, InternSpark Internship Tasks, Submit Internship Work, Online Internship Submission, Internship Certificate Process">
+
+    <meta name="author" content="InternSpark">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://www.internspark.in/submission.html">
+
+    <!-- ================= OPEN GRAPH (FACEBOOK / LINKEDIN) ================= -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Internship Task Submission | InternSpark">
+    <meta property="og:description"
+        content="Complete your InternSpark internship by submitting your tasks. Upload GitHub and LinkedIn links to proceed for certificate verification.">
+    <meta property="og:url" content="https://www.internspark.in/submission.html">
+    <meta property="og:image" content="https://www.internspark.in/img/og-submission.png">
+    <meta property="og:site_name" content="InternSpark">
+
+    <!-- ================= TWITTER CARD ================= -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Internship Task Submission | InternSpark">
+    <meta name="twitter:description"
+        content="Submit your internship tasks at InternSpark to complete your remote internship and receive verified certificates.">
+    <meta name="twitter:image" content="https://www.internspark.in/img/og-submission.png">
+
+    <!-- ================= FAVICONS & APP ICONS ================= -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+
+    <link rel="icon" href="img/favicon/favicon.ico">
+
+    <link rel="manifest" href="img/favicon/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#0f0f23">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#0f0f23">
+
+
+    <!-- ================= SEO & UI ================= -->
+    <meta name="google" content="notranslate">
+    <meta name="theme-color" content="#0f0f23">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-519NNPN4L1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-519NNPN4L1');
+    </script>
+
+
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+    <style>
+        /* Overlay */
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            /* fade effect */
+        }
+
+        .popup-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .popup-overlay.hide {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        /* Popup Box */
+        .popup-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: fadeInUp 0.4s ease;
+        }
+
+        /* Success Tick */
+        .tick {
+            font-size: 60px;
+            color: green;
+            animation: pop 0.4s ease;
+        }
+
+        /* Tick Pop Animation */
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Box Fade-in */
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--dark);
+            color: #fff;
+            overflow-x: hidden;
+            padding-top: 84px;
+            /* FIXED NAVBAR SPACE */
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            min-height: 84px;
+            background: rgba(15, 15, 35, .95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+            z-index: 1100;
+            padding: .75rem 0;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+
+
+        .hero-header {
+            background: url('img/banar1.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+
+
+        #whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        #whatsapp-btn img {
+            width: 65px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .hero-header {
+                padding: 50px 15px;
+            }
+        }
+    </style>
+    <style>
+        .social-widget {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        .social-widget a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .facebook {
+            background: #3b5998;
+        }
+
+        .instagram {
+            background: #E1306C;
+        }
+
+        .linkedin {
+            background: #0077b5;
+        }
+
+        .whatsapp {
+            background: #25D366;
+        }
+
+        .social-widget a:hover {
+            transform: scale(1.2);
+            opacity: 0.9;
+        }
+    </style>
+    <style>
+        body {
+            padding-top: 80px;
+            /* navbar height ke hisaab se adjust kar sakte ho */
+        }
+
+        /* ================= SUBMISSION PAGE LAYOUT FIXES ================= */
+
+        /* Hero improvement */
+        .hero-header {
+            position: relative;
+            padding: 100px 20px;
+        }
+
+        .hero-header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        .hero-header h1,
+        .hero-header p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Container spacing fix */
+        .container-xxl.bg-light {
+            margin-top: -30px;
+            border-radius: 30px 30px 0 0;
+        }
+
+        /* Section spacing */
+        section {
+            scroll-margin-top: 100px;
+        }
+
+        /* Card polish */
+        .card {
+            border-radius: 20px;
+        }
+
+        .card-body {
+            padding: 2.5rem;
+        }
+
+        /* Form spacing */
+        .form-label {
+            margin-bottom: 6px;
+        }
+
+        .form-control,
+        .form-select {
+            padding: 14px 16px;
+        }
+
+        /* Buttons alignment */
+        button.btn-lg {
+            min-width: 160px;
+        }
+
+        /* Social buttons uniform */
+        .btn.rounded-circle {
+            transition: all 0.3s ease;
+        }
+
+        .btn.rounded-circle:hover {
+            transform: translateY(-4px);
+        }
+
+        /* Sample certificate image */
+        .img-thumbnail {
+            border-radius: 16px;
+        }
+
+        /* Trusted logos marquee fix */
+        marquee img {
+            vertical-align: middle;
+        }
+
+        /* Mobile fixes */
+        @media (max-width: 768px) {
+            .hero-header {
+                padding: 70px 15px;
+            }
+
+            .card-body {
+                padding: 1.75rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* ================= GLASS FORM STYLE (MATCH REGISTRATION) ================= */
+
+        .glass-section {
+            background: linear-gradient(rgba(15, 15, 35, 0.85),
+                    rgba(15, 15, 35, 0.85)),
+                url("img/banar1.jpg") center/cover no-repeat;
+            border-radius: 30px;
+        }
+
+        /* Card look same as Registration */
+        .glass-section .card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Card padding */
+        .glass-section .card-body {
+            padding: 3rem;
+        }
+
+        /* Heading same feel */
+        .glass-section h2 {
+            color: #fff !important;
+        }
+
+        .glass-section h2 i {
+            color: #ffc107;
+        }
+
+        /* Labels */
+        .glass-section .form-label,
+        .glass-section legend {
+            color: #fff;
+        }
+
+        /* Inputs & Select */
+        .glass-section .form-control,
+        .glass-section .form-select {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 14px;
+            border: none;
+            padding: 14px 16px;
+            font-size: 15px;
+        }
+
+        /* Input focus */
+        .glass-section .form-control:focus,
+        .glass-section .form-select:focus {
+            box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.35);
+            border: none;
+        }
+
+        /* Code hint text */
+        .glass-section code {
+            color: #ffc107;
+            font-size: 12px;
+        }
+
+        /* Buttons same style */
+        .glass-section .btn-primary {
+            background: #ffc107;
+            border: none;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .glass-section .btn-primary:hover {
+            background: #e0a800;
+        }
+
+        .glass-section .btn-outline-secondary {
+            border-color: #ccc;
+            color: #fff;
+        }
+
+        .glass-section .btn-outline-secondary:hover {
+            background: #fff;
+            color: #000;
+        }
+
+        /* Mobile spacing */
+        @media (max-width: 768px) {
+            .glass-section .card-body {
+                padding: 1.8rem;
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+</head>
+
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-black bg-opacity-75 backdrop-blur py-2 shadow">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-3" href="index.html">
+                <img src="img/navbar-logo.png" alt="InternSpark Logo" height="70" class="me-2">
+                <!-- <span style="color:var(--yellow)">Intern<span style="color:#fff">Spark</span> </span> -->
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler bg-warning border-0 p-2 rounded" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <i class="fas fa-bars text-dark fs-5"></i>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Internship
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="internship.html">Internship Apply</a></li>
+
+                            <li><a class="dropdown-item" href="internProfile.html">
+                                    Intern Profile
+                                </a></li>
+                            <li><a class="dropdown-item" href="task.html">Tasks</a></li>
+
+                            <li><a class="dropdown-item" href="submission.html">Task Submission</a></li>
+                            <li><a class="dropdown-item" href="certificate.html">Certificate</a></li>
+
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="assessment.html">Assessment</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" data-bs-toggle="dropdown">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark rounded-4">
+                            <li><a class="dropdown-item" href="offer-letter.html">Offer Letter</a></li>
+                            <li><a class="dropdown-item" href="lor.html">Letter of Recommendation</a></li>
+                            <li><a class="dropdown-item" href="report-card.html">Report Card</a></li>
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="code-editor.html">Code Editor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item ms-lg-2">
+                        <a class="btn btn-warning fw-bold px-4 py-2 rounded-pill" href="internship.html">
+                            Apply Now
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-header">
+        <h1 class="fw-bold"><span style="color: yellow;">Internship Task Submission</span></h1>
+        <p class="lead">Your journey towards a certified internship experience starts here.</p>
+    </section>
+
+    <div class="container-xxl py-5 bg-light">
+        <div class="container py-4 px-lg-5">
+            <!-- Heading -->
+            <!-- <div class="text-center mb-5">
+      <h1 class="fw-bold text-primary animate__animated animate__fadeInDown">
+        Internship Submission Details
+      </h1>
+      <p class="text-muted mt-2"></p>
+    </div> -->
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- AICTE Logo + Title -->
+                    <div class="text-center mb-4">
+                        <img src="img/aicte.png" alt="AICTE" height="120"
+                            class="mb-3 animate__animated animate__zoomIn">
+                        <h2 class="fw-bold">
+                            <span style="color: yellow;">All India Council for Technical Education Approved
+                                Internships</span>
+                        </h2>
+                    </div>
+
+                    <!-- Important Note -->
+                    <div class="alert alert-danger text-center shadow-sm mb-4">
+                        📌 Please fill all the required details carefully.
+                        Information provided will be used for your <b>Completion Certificate</b>.
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <!-- Social Media Widget -->
+                    <!-- <div class="text-center my-4">
+                        <h5 class="fw-bold text-secondary mb-3"><span style="color: yellow;">🌐 Stay Connected</span></h5>
+                        <div class="d-flex justify-content-center flex-wrap gap-3">
+
+                            <a href="https://www.linkedin.com/company/alfido-tech/" target="_blank"
+                                class="btn btn-outline-primary rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:24px;">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                            <a href="https://api.whatsapp.com/send?phone=919977465250" target="_blank"
+                                class="btn btn-outline-success rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:24px;">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+
+                            <a href="https://www.whatsapp.com/channel/0029Va9oTsF1CYoKbCt5TJ41" target="_blank"
+                                class="btn btn-outline-warning rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:22px;">
+                                <i class="fas fa-bullhorn"></i>
+                            </a>
+
+                            <a href="https://t.me/+s9WykS4sL7hlN2I1" target="_blank"
+                                class="btn btn-outline-info rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:24px;">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/alfido_tech/" target="_blank"
+                                class="btn btn-outline-danger rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:24px;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+
+                            <a href="https://twitter.com/alfidotech" target="_blank"
+                                class="btn btn-outline-dark rounded-circle shadow-sm"
+                                style="width:60px; height:60px; display:flex; align-items:center; justify-content:center; font-size:22px;">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+
+                        </div>
+                    </div> -->
+
+                    <hr class="my-4">
+
+                    <!-- Sample Certificate -->
+                    <div class="text-center">
+                        <h4 class="fw-bold text-secondary mb-3"><span style="color: yellow;">🎓 Sample Certificate of
+                                Completion </span></h4>
+                        <img src="img/sample19.jpg"
+                            class="img-fluid img-thumbnail shadow-lg rounded-3 mb-4 animate__animated animate__fadeInUp"
+                            alt="Sample Certificate">
+                    </div>
+
+                    <!-- Trusted Logos -->
+                    <div class="bg-white shadow-sm rounded-3 p-3 glass-section">
+                        <h6 class="fw-bold text-muted text-center mb-3"> <span style="color: #fff;">Trusted by Students
+                                Placed In</span></h6>
+                        <marquee behavior="scroll" direction="left" scrollamount="5" class="">
+                            <img src="https://iar.ac.in/wp-content/uploads/2021/10/04-1.png" alt="TCS Logo"
+                                style="height: 30px; margin-right: 20px;">
+                            <img src="https://connect-assets.prosple.com/cdn/ff/wqNbpMokplIApdBAezgTcuXexvQ2m2JcX1pJTEM_xMM/1596191329/public/2020-07/banner-infosys-890x320-2020.png"
+                                alt="Infosys Logo" style="height: 30px; margin-right: 20px;">
+                            <img src="https://www.wipro.com/content/dam/wipro/social-icons/wipro_new_logo.svg"
+                                alt="Wipro Logo" style="height: 30px; margin-right: 20px;">
+                            <img src="https://th.bing.com/th/id/OIP.qhAPWvYnIyuJMR-rdUWrJgHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                                alt="Accenture Logo" style="height: 30px; margin-right: 20px;">
+                            <img src="https://wearegreen.s3.eu-west-3.amazonaws.com/logos/8979047692400979.png"
+                                alt="Capgemini Logo" style="height: 30px; margin-right: 20px;">
+                            <img src="https://logonoid.com/images/tech-mahindra-logo.png" alt="Tech Mahindra Logo"
+                                style="height: 30px; margin-right: 20px;">
+                            <img src="https://th.bing.com/th/id/R.7676097d93741999588ff6211ef7aca3?rik=55jLu2vzoEAQ5A&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgoogle%2fgoogle_PNG19625.png&ehk=FBxfAhiYOoC0ZNfTdxK92tQjoMdPbHtjrB9xiVVsSl8%3d&risl=&pid=ImgRaw&r=0"
+                                alt="Google Logo" style="height: 30px; margin-right: 20px;">
+                        </marquee>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Form Section -->
+    <section id="formSection" class="container py-5 glass-section">
+
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-5">
+                <h2 class="text-center mb-4 fw-bold text-primary">
+                    <i class="fa-solid fa-file-alt"></i> Submission Form
+                </h2>
+
+                <form id="submissionForm" method="POST">
+                    <!-- Full Name -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-solid fa-user"></i> Full Name</label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="fullName" name="fullName"
+                            required>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-solid fa-envelope"></i> Email</label>
+                        <input type="email" class="form-control form-control-lg rounded-3" id="email" name="email"
+                            required>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            Number</label>
+                        <input type="tel" class="form-control form-control-lg rounded-3" id="whatsapp" name="whatsapp"
+                            required>
+                    </div>
+
+                    <!-- Domain -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-solid fa-laptop-code"></i> Internship
+                            Domain</label>
+                        <select class="form-select form-select-lg rounded-3" id="internshipDomain"
+                            name="internshipDomain" required>
+                            <option value="">Select Domain...</option>
+                            <option>Frontend Developer</option>
+                            <option>React.JS</option>
+                            <option>MERN Stack Developer</option>
+                            <option>Python Developer</option>
+                            <option>C++/C Programming</option>
+                            <option>Java Developer</option>
+                            <option>.NET Developer</option>
+
+                            <option>Data Analytics</option>
+                            <option>Business Analytics</option>
+                            <option>Data Science</option>
+                            <option>Artificial Intelligence</option>
+                            <option>Machine Learning</option>
+
+                            <option>Digital Marketing</option>
+                            <option>Cybersecurity</option>
+                            <option>UX/UI Design</option>
+                            <option>Android Developer</option>
+
+                            <option>Very Large Scale Integration (VLSI)</option>
+                            <option>Embedded Systems</option>
+                            <option>Cloud Computing</option>
+                            <option>DevOps</option>
+                        </select>
+                    </div>
+
+                    <!-- Candidate ID -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-solid fa-id-card"></i> Candidate ID</label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="cidno" name="cidno"
+                            required>
+                    </div>
+
+                    <!-- LinkedIn -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-linkedin"></i> LinkedIn
+                            Profile</label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="linkedIn" name="linkedIn"
+                            required>
+                    </div>
+
+                    <!-- GitHub & LinkedIn Task Links -->
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-github"></i> Task 1 GitHub Link
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3"
+                            placeholder="If you don't have a link Write NA" id="gtask1" name="gtask1" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-linkedin"></i> Task 1 LinkedIn Post
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="ltask1" name="ltask1"
+                            required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-github"></i> Task 2 GitHub Link
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="gtask2" name="gtask2"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-linkedin"></i> Task 2 LinkedIn Post
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="ltask2" name="ltask2"
+                            required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-github"></i> Task 3 GitHub Link
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="gtask3" name="gtask3"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold"><i class="fa-brands fa-linkedin"></i> Task 3 LinkedIn Post
+                            <br>
+                            <code>(If you don't have a link Write "NA")</code></label>
+                        <input type="text" class="form-control form-control-lg rounded-3" id="ltask3" name="ltask3"
+                            required>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-4 shadow-sm me-2"
+                            onclick="window.open('https://payments.cashfree.com/forms/NewInternship', '_blank');">
+                            <i class="fa-solid fa-paper-plane"></i> Submit
+                        </button>
+                        <button type="reset" class="btn btn-outline-secondary btn-lg px-4">
+                            <i class="fa-solid fa-rotate-right"></i> Reset
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="pt-5 pb-4 mt-5 position-relative">
+        <div class="container">
+            <div class="row gy-4">
+
+                <!-- Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/navbar-logo.png" alt="InternSpark Logo" class="footer-logo">
+
+                    <p class="text-secondary mt-3">
+                        InternSpark is an online internship & skill development platform
+                        powered by Alfido Tech.
+                    </p>
+
+                    <!-- Social Media -->
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.linkedin.com/company/internspark" target="_blank" class="footer-social"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/internspark" target="_blank" class="footer-social"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/internspark" target="_blank" class="footer-social" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@internspark" target="_blank" class="footer-social"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="domains.html" class="footer-link">Domains</a></li>
+                        <li><a href="about.html" class="footer-link">About</a></li>
+                        <li><a href="faq.html" class="footer-link">FAQ</a></li>
+                        <li><a href="/sitemap.xml" class="footer-link">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="/privacy-policy.html" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="/terms.html" class="footer-link">Terms & Conditions</a></li>
+                        <li><a href="/refund.html" class="footer-link">Refund Policy</a></li>
+                        <li><a href="/disclaimer.html" class="footer-link">Disclaimer</a></li>
+                        <li><a href="/accessibility.html" class="footer-link">Accessibility</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Address -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-bold mb-3">Contact & Address</h6>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-map-marker-alt me-2 text-warning"></i>
+                        Bengaluru, Karnataka – 560095, India
+                    </p>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-envelope me-2 text-warning"></i>
+                        <a href="mailto:info@internspark.in" class="footer-link">
+                            info@internspark.in
+                        </a>
+                    </p>
+
+                    <p class="text-secondary small mb-2">
+                        <i class="fas fa-phone me-2 text-warning"></i>
+                        <a href="tel:+919977465250" class="footer-link">
+                            +91 99774 65250
+                        </a>
+                    </p>
+
+                    <p class="text-secondary small mb-0">
+                        <i class="fas fa-headset me-2 text-warning"></i>
+                        <a href="mailto:support@internspark.in" class="footer-link">
+                            support@internspark.in
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+
+            <hr class="my-4 border-secondary">
+
+            <!-- Bottom Bar -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+                <p class="mb-2 mb-md-0 text-secondary small">
+                    © 2025 InternSpark | Powered by
+                    <a href="https://alfidotech.com" target="_blank">Alfido Tech</a>
+                </p>
+                <p class="text-secondary small mb-0">
+                    Made with ❤️ for learners
+                </p>
+            </div>
+
+            <!-- Legal Safe Disclaimer -->
+            <p class="text-secondary small text-center mt-3">
+                InternSpark is a private skill-development initiative and is not affiliated
+                with AICTE or any government organization.
+            </p>
+        </div>
+    </footer>
+    <!-- ================= Footer End ================= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- WhatsApp Button -->
+    <div id="whatsapp-btn">
+        <a href="https://api.whatsapp.com/send?phone=919977465250" target="_blank">
+            <img src="https://www.pngall.com/wp-content/uploads/2016/04/WhatsApp-PNG-Picture.png"
+                alt="WhatsApp Contact">
+        </a>
+    </div>
+
+    <!-- Form Submission Script -->
+    <script>
+        document.getElementById("submissionForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                whatsapp: document.getElementById('whatsapp').value,
+                internshipDomain: document.getElementById('internshipDomain').value,
+                cidno: document.getElementById('cidno').value,
+                linkedIn: document.getElementById('linkedIn').value,
+                gtask1: document.getElementById('gtask1').value,
+                ltask1: document.getElementById('ltask1').value,
+                gtask2: document.getElementById('gtask2').value,
+                ltask2: document.getElementById('ltask2').value,
+                gtask3: document.getElementById('gtask3').value,
+                ltask3: document.getElementById('ltask3').value,
+            };
+
+            fetch("https://script.google.com/macros/s/AKfycbyW8kqbJWGkHe2yRxw_Wh7_Ht-3z_XYsuVtCvwd5HfkMewnD1LhzByraqwimKHUTqOkWg/exec", {
+                method: "POST",
+                mode: "no-cors",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+            })
+                .then(() => {
+                    document.getElementById("submissionForm").reset();
+                    window.open("https://payments.cashfree.com/forms/internshiplafido1", "_blank");
+
+                })
+                .catch((error) => console.error("Error:", error));
+        });
+    </script>
+
+</body>
+
+</html>
