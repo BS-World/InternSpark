@@ -34,21 +34,18 @@
     <meta name="twitter:image" content="https://www.internspark.in/img/og-internprofile.png">
 
     <link rel="icon" href="/img/favicon/favicon.ico">
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
-<link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
-<link rel="manifest" href="/img/favicon/site.webmanifest">
-<meta name="theme-color" content="#0f0f23">
 
-=======
-=======
->>>>>>> Stashed changes
     <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
     <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/img/favicon/site.webmanifest">
     <meta name="theme-color" content="#0f0f23">
->>>>>>> Stashed changes
+
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/img/favicon/site.webmanifest">
+    <meta name="theme-color" content="#0f0f23">
+
 
 
     <!-- ================= SEO & UI ================= -->
@@ -77,7 +74,6 @@
         gtag('config', 'G-519NNPN4L1');
     </script>
     <style>
-
         #whatsapp-btn {
             position: fixed;
             bottom: 20px;
@@ -89,244 +85,264 @@
             width: 65px;
             height: auto;
         }
-   /* ================= GLOBAL ================= */
-body {
-    font-family: 'Heebo', sans-serif;
-    padding-top: 80px;
-}
 
-/* ================= ANIMATIONS ================= */
-@keyframes pop {
-    0% { transform: scale(0.5); opacity: 0; }
-    50% { transform: scale(1.2); opacity: 1; }
-    100% { transform: scale(1); }
-}
+        /* ================= GLOBAL ================= */
+        body {
+            font-family: 'Heebo', sans-serif;
+            padding-top: 80px;
+        }
 
-@keyframes fadeInUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
+        /* ================= ANIMATIONS ================= */
+        @keyframes pop {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
 
-@keyframes spin {
-    to { transform: rotate(360deg); }
-}
+            50% {
+                transform: scale(1.2);
+                opacity: 1;
+            }
 
-/* ================= HERO ================= */
-.hero-header {
-    position: relative;
-    padding: 100px 20px;
-    text-align: center;
-    background: url('img/banar1.jpg') center/cover no-repeat;
-    color: #fff;
-}
+            100% {
+                transform: scale(1);
+            }
+        }
 
-.hero-header::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    pointer-events: none; /* 🔥 FIXED: button clickable */
-}
+        @keyframes fadeInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
 
-.hero-header h1,
-.hero-header p,
-.hero-header a {
-    position: relative;
-    z-index: 2;
-}
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
 
-.hero-header h1 {
-    font-size: clamp(2.2rem, 5vw, 2.8rem);
-    font-weight: 700;
-}
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
 
-.hero-header p {
-    opacity: 0.85;
-}
+        /* ================= HERO ================= */
+        .hero-header {
+            position: relative;
+            padding: 100px 20px;
+            text-align: center;
+            background: url('img/banar1.jpg') center/cover no-repeat;
+            color: #fff;
+        }
 
-/* ================= INTERN PROFILE HERO ================= */
-.hero-profile {
-    min-height: 55vh;
-    display: flex;
-    align-items: center;
-    background: linear-gradient(135deg, #0f0f23, #1b1f3b);
-    color: #fff;
-    padding: 120px 20px 60px;
-}
+        .hero-header::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            pointer-events: none;
+            /* 🔥 FIXED: button clickable */
+        }
 
-/* ================= SEARCH BOX ================= */
-.profile-search {
-    max-width: 720px;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    border-radius: 16px;
-    padding: 14px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
+        .hero-header h1,
+        .hero-header p,
+        .hero-header a {
+            position: relative;
+            z-index: 2;
+        }
 
-/* ================= CARD ================= */
-.card-custom {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(18px);
-    border-radius: 18px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: #fff;
-}
+        .hero-header h1 {
+            font-size: clamp(2.2rem, 5vw, 2.8rem);
+            font-weight: 700;
+        }
 
-.card-custom h4,
-.card-custom h5,
-.card-custom p strong {
-    color: #FFC107;
-}
+        .hero-header p {
+            opacity: 0.85;
+        }
 
-/* ================= PROFILE IMAGE ================= */
-.profile-photo {
-    max-width: 280px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 18px;
-    border: 2px solid rgba(255, 193, 7, 0.6);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-}
+        /* ================= INTERN PROFILE HERO ================= */
+        .hero-profile {
+            min-height: 55vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #0f0f23, #1b1f3b);
+            color: #fff;
+            padding: 120px 20px 60px;
+        }
 
-/* ================= LOADING ================= */
-.loading-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 14px 18px;
-    margin: 20px auto;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(14px);
-    border-radius: 12px;
-    color: #FFC107;
-}
+        /* ================= SEARCH BOX ================= */
+        .profile-search {
+            max-width: 720px;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
 
-.spinner {
-    width: 22px;
-    height: 22px;
-    border: 3px solid rgba(255, 193, 7, 0.25);
-    border-top-color: #FFC107;
-    border-radius: 50%;
-    animation: spin 0.8s linear infinite;
-}
+        /* ================= CARD ================= */
+        .card-custom {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(18px);
+            border-radius: 18px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+        }
 
-/* ================= POPUP ================= */
-.popup-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
+        .card-custom h4,
+        .card-custom h5,
+        .card-custom p strong {
+            color: #FFC107;
+        }
 
-.popup-overlay.show {
-    display: flex;
-}
+        /* ================= PROFILE IMAGE ================= */
+        .profile-photo {
+            max-width: 280px;
+            aspect-ratio: 1/1;
+            object-fit: cover;
+            border-radius: 18px;
+            border: 2px solid rgba(255, 193, 7, 0.6);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
 
-.popup-box {
-    background: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 400px;
-    width: 90%;
-    animation: fadeInUp 0.4s ease;
-}
+        /* ================= LOADING ================= */
+        .loading-box {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(14px);
+            border-radius: 12px;
+            color: #FFC107;
+        }
 
-.tick {
-    font-size: 60px;
-    color: green;
-    animation: pop 0.4s ease;
-}
+        .spinner {
+            width: 22px;
+            height: 22px;
+            border: 3px solid rgba(255, 193, 7, 0.25);
+            border-top-color: #FFC107;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
 
-/* ================= MODAL FINAL FIX ================= */
+        /* ================= POPUP ================= */
+        .popup-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
 
-/* Dark overlay blur */
-.modal-backdrop.show {
-    opacity: 0.8;
-    backdrop-filter: blur(6px);
-}
+        .popup-overlay.show {
+            display: flex;
+        }
 
-/* Modal container */
-.modal-content {
-    background: linear-gradient(135deg, #0f0f23, #1b1f3b);
-    color: #fff;
-    border-radius: 18px;
-    border: 1px solid rgba(255, 193, 7, 0.4);
-    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85);
-    overflow: hidden;
-}
+        .popup-box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            animation: fadeInUp 0.4s ease;
+        }
 
-/* Header */
-.modal-header {
-    background: transparent;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
+        .tick {
+            font-size: 60px;
+            color: green;
+            animation: pop 0.4s ease;
+        }
 
-.modal-header h5 {
-    color: #FFC107;
-    font-weight: 700;
-}
+        /* ================= MODAL FINAL FIX ================= */
 
-/* Close button */
-.modal-header .btn-close {
-    filter: invert(1);
-}
+        /* Dark overlay blur */
+        .modal-backdrop.show {
+            opacity: 0.8;
+            backdrop-filter: blur(6px);
+        }
 
-/* Body */
-.modal-body {
-    background: transparent;
-}
+        /* Modal container */
+        .modal-content {
+            background: linear-gradient(135deg, #0f0f23, #1b1f3b);
+            color: #fff;
+            border-radius: 18px;
+            border: 1px solid rgba(255, 193, 7, 0.4);
+            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.85);
+            overflow: hidden;
+        }
 
-.modal-body label {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #FFC107;
-    margin-top: 10px;
-}
+        /* Header */
+        .modal-header {
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
 
-/* Inputs */
-.modal-body input {
-    background: rgba(255, 255, 255, 0.08);
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    border-radius: 10px;
-}
+        .modal-header h5 {
+            color: #FFC107;
+            font-weight: 700;
+        }
 
-.modal-body input:focus {
-    background: rgba(255, 255, 255, 0.15);
-    color: #fff;
-    border-color: #FFC107;
-    box-shadow: none;
-}
+        /* Close button */
+        .modal-header .btn-close {
+            filter: invert(1);
+        }
 
-/* Footer */
-.modal-footer {
-    background: transparent;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
+        /* Body */
+        .modal-body {
+            background: transparent;
+        }
 
-/* Buttons */
-.modal-footer .btn-secondary {
-    background: rgba(255, 255, 255, 0.15);
-    border: none;
-    color: #fff;
-}
+        .modal-body label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #FFC107;
+            margin-top: 10px;
+        }
 
-.modal-footer .btn-success {
-    background: #FFC107;
-    border: none;
-    color: #111;
-    font-weight: 700;
-}
+        /* Inputs */
+        .modal-body input {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
 
-.modal-footer .btn-success:hover {
-    background: #e0a800;
-}
+        .modal-body input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            color: #fff;
+            border-color: #FFC107;
+            box-shadow: none;
+        }
 
+        /* Footer */
+        .modal-footer {
+            background: transparent;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        /* Buttons */
+        .modal-footer .btn-secondary {
+            background: rgba(255, 255, 255, 0.15);
+            border: none;
+            color: #fff;
+        }
+
+        .modal-footer .btn-success {
+            background: #FFC107;
+            border: none;
+            color: #111;
+            font-weight: 700;
+        }
+
+        .modal-footer .btn-success:hover {
+            background: #e0a800;
+        }
     </style>
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 
@@ -415,43 +431,42 @@ body {
     </nav>
 
     <!-- Hero -->
-<section class="hero-header">
-    <div class="container text-center">
-        <h1>
-            <span style="color: yellow;">Intern Profile</span>
-        </h1>
+    <section class="hero-header">
+        <div class="container text-center">
+            <h1>
+                <span style="color: yellow;">Intern Profile</span>
+            </h1>
 
-        <p class="lead text-white">
-            Access, manage, and track your internship details
-        </p>
-    </div>
-</section>
-
-<div class="container py-4">
-    <!-- Search Box -->
-    <div class="verify-card">
-
-        <h4 class="text-center mb-3 text-primary fw-bold">
-            🔍 <span style="color: yellow;">Intern Profile Search</span>
-        </h4>
-
-        <div class="input-group mb-3">
-            <input type="text" id="candidateId"
-                class="form-control form-control-lg"
-                placeholder="Enter Candidate ID (e.g. BS/REG/115060)">
-
-            <button onclick="fetchProfile()" class="btn btn-primary btn-lg">
-                <i class="fas fa-search"></i> Search
-            </button>
+            <p class="lead text-white">
+                Access, manage, and track your internship details
+            </p>
         </div>
+    </section>
 
-        <!-- Result -->
-        <div id="profileData" class="mt-4 text-center text-muted">
-            <em>Enter Candidate ID to view intern profile...</em>
+    <div class="container py-4">
+        <!-- Search Box -->
+        <div class="verify-card">
+
+            <h4 class="text-center mb-3 text-primary fw-bold">
+                🔍 <span style="color: yellow;">Intern Profile Search</span>
+            </h4>
+
+            <div class="input-group mb-3">
+                <input type="text" id="candidateId" class="form-control form-control-lg"
+                    placeholder="Enter Candidate ID (e.g. BS/REG/115060)">
+
+                <button onclick="fetchProfile()" class="btn btn-primary btn-lg">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+
+            <!-- Result -->
+            <div id="profileData" class="mt-4 text-center text-muted">
+                <em>Enter Candidate ID to view intern profile...</em>
+            </div>
+
         </div>
-
     </div>
-</div>
 
 
 
@@ -492,8 +507,7 @@ body {
                         <h5 class="fw-bold mt-3">Assigned Tasks</h5> <a id="task" href="#" target="_blank"
                             class="btn btn-outline-primary btn-sm">View Task</a>
                         <h5 class="fw-bold mt-3">Task Submission</h5>
-                        <a href="submission.html" target="_blank"
-                            class="btn btn-primary btn-sm">Submit Here</a>
+                        <a href="submission.html" target="_blank" class="btn btn-primary btn-sm">Submit Here</a>
                         <p><strong>Remark:</strong> <span id="remark" class="badge bg-warning text-dark">N/A</span></p>
 
                         <button class="btn btn-warning mt-2" onclick="openEditModal()"><i class="fa fa-edit"></i> Edit
